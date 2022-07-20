@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Create device">d98675811b909110bed02063b24bcb41</sc_cat_item>
+        <sc_category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-23 13:22:12</sys_created_on>
+        <sys_id>4da6f9c11b909110bed02063b24bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian.Create device</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_category_4da6f9c11b909110bed02063b24bcba4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-23 13:22:12</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sc_cat_item_category_4da6f9c11b909110bed02063b24bcba4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create device">d98675811b909110bed02063b24bcb41</sc_cat_item><sc_category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-23 13:22:12</sys_created_on><sys_id>4da6f9c11b909110bed02063b24bcba4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Guardian.Create device</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sc_cat_item_category_4da6f9c11b909110bed02063b24bcba4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-23 13:22:12</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1957773300</payload_hash>
+        <record_name>Guardian.Create device</record_name>
+        <reverted_from/>
+        <source>5379a0841b2505107eefc912604bcb83</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-23 13:22:12</sys_created_on>
+        <sys_id>c1a6f9c11b909110bed02063b24bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18190ba39a10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-23 13:22:12</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>0da6f9c136909110e18b9e1ab21649a7</update_guid>
+        <update_guid_history>0da6f9c136909110e18b9e1ab21649a7:1957773300</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Guardian.Create device">68bd36e21b14d510bed02063b24bcb2a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-28 10:23:32</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>00d2a47382074411800371f88e15fe09</sys_id>
+        <sys_metadata>4da6f9c11b909110bed02063b24bcba4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian.Create device</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_4da6f9c11b909110bed02063b24bcba4</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_4da6f9c11b909110bed02063b24bcba4">c1a6f9c11b909110bed02063b24bcba8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-28 10:23:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

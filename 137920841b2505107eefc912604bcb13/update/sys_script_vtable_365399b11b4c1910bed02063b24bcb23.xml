@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Root Authority</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+    var u = new GlideRecord("x_snc_guardian_login")
+    u.get("user", gs.getUserID())
+    var jwt = u.jwt
+
+    var sm = new sn_ws.RESTMessageV2();
+    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/accounts/root-authorities")
+    sm.setHttpMethod("get")
+    sm.setRequestHeader("authorization", "bearer " + jwt)
+    var response = sm.execute()
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+    gs.addInfoMessage(responseBody)
+
+    var body = JSON.parse(responseBody)
+
+    for (i = 0; i < body.length; i++) {
+        var row = {}
+
+        row.username = body[i].username
+        row.did = body[i].did
+        row.sys_id = body[i].username
+
+        v_table.addRow(row)
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 08:27:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>365399b11b4c1910bed02063b24bcb23</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Root Authority</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_365399b11b4c1910bed02063b24bcb23</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 07:47:43</sys_updated_on>
+        <table>x_snc_guardian_st_root_authority</table>
+    </sys_script_vtable>
+</record_update>

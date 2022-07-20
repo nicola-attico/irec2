@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="My Profile" max_length="40" name="x_snc_guardian_st_my_profile" sizeclass="0" type="collection">
+        <element label="Account ID" max_length="20" name="account_id" type="string"/>
+        <element label="Did" max_length="200" name="did" type="string"/>
+        <element label="Role" max_length="100" name="role" type="string"/>
+        <element label="Topic Id" max_length="20" name="topic_id" type="string"/>
+        <element label="Username" max_length="100" name="username" type="string"/>
+    </element>
+</database>

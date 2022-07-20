@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>My User</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+    var u = new GlideRecord("sys_user")
+    u.get(gs.getUserID())
+    var jwt = u.x_snc_guardian_jwt
+	var guardian_username = u.x_snc_guardian_username
+
+    var sm = new sn_ws.RESTMessageV2();
+    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/profiles" + guardian_username)
+    sm.setHttpMethod("get")
+    sm.setRequestHeader("authorization", "bearer " + jwt)
+    var response = sm.execute()
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+    gs.addInfoMessage(responseBody)
+
+    var body = JSON.parse(responseBody)
+
+    for (i = 0; i < body.length; i++) {
+        var row = {}
+
+        row.account_id = body[i].account_id
+
+
+        v_table.addRow(row)
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 18:35:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>45ae3d4c1be505107eefc912604bcb9d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>My User</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_45ae3d4c1be505107eefc912604bcb9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-15 12:13:41</sys_updated_on>
+        <table>x_snc_guardian_st_my_user</table>
+    </sys_script_vtable>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_script_vtable_45ae3d4c1be505107eefc912604bcb9d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_vtable"&gt;&lt;sys_script_vtable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;cache_isolation_level&gt;USER&lt;/cache_isolation_level&gt;&lt;cache_strategy&gt;CACHE_BY_QUERY&lt;/cache_strategy&gt;&lt;cache_ttl&gt;0&lt;/cache_ttl&gt;&lt;name&gt;My User&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function executeQuery(v_table, v_query) {
+
+    var u = new GlideRecord("sys_user")
+    u.get(gs.getUserID())
+    var jwt = u.x_snc_guardian_jwt
+	var guardian_username = u.x_snc_guardian_username
+
+    var sm = new sn_ws.RESTMessageV2();
+    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/profiles" + guardian_username)
+    sm.setHttpMethod("get")
+    sm.setRequestHeader("authorization", "bearer " + jwt)
+    var response = sm.execute()
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+    gs.addInfoMessage(responseBody)
+
+    var body = JSON.parse(responseBody)
+
+    for (i = 0; i &lt; body.length; i++) {
+        var row = {}
+
+        row.account_id = body[i].account_id
+
+
+        v_table.addRow(row)
+    }
+
+})(v_table, v_query);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_vtable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-03 18:35:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;45ae3d4c1be505107eefc912604bcb9d&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;My User&lt;/sys_name&gt;&lt;sys_package display_value="guardian" source="x_snc_guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_vtable_45ae3d4c1be505107eefc912604bcb9d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-15 12:13:41&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_guardian_st_my_user&lt;/table&gt;&lt;/sys_script_vtable&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1583655598</payload_hash>
+        <record_name>My User</record_name>
+        <reverted_from/>
+        <source>5379a0841b2505107eefc912604bcb83</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-15 12:13:41</sys_created_on>
+        <sys_id>973a90261b40d910bed02063b24bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18167489de60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-15 12:13:41</sys_updated_on>
+        <type>Remote Table</type>
+        <update_guid>df3a90260d40d91085196c3f680dd66c</update_guid>
+        <update_guid_history>df3a90260d40d91085196c3f680dd66c:-1583655598,612b9a421d8c59105620401c5d3156e3:1726094533,e889dace744c5910ecda05f996e9d04b:388011900,730511353a4c19106dde59e18ed108a0:-1100129817,1b990b7354b70510188441beb068ec2c:308619133,26aa5ae5fab30d50b18efc9c4cface48:-1394599115,a28ad6e552b30d50b9cfcf258e18f62e:-442075883,713a83e673460d10403fc28f7e5f8805:-1131845443,d4e44280c82905104121aa1a70292ee2:104252566,51a4028070290510cfdf194af020e1f0:-323170273,3f93c2409929051018ff5142cbf08e5b:104252566,618006cc9ce50510272c0ad519b65b4b:594520042,0b50ce8ceee50510aeb112ed98d11c66:-812515510,22aff58c9fe5051005e7c3784677b0d8:-687092158</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-15 12:25:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_vtable">sys_script_vtable</sys_db_object>
+        <sys_id>81d168766d0f43a89fe41a3e67d0bd24</sys_id>
+        <sys_metadata>45ae3d4c1be505107eefc912604bcb9d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My User</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_script_vtable_45ae3d4c1be505107eefc912604bcb9d</sys_update_name>
+        <sys_update_version display_value="sys_script_vtable_45ae3d4c1be505107eefc912604bcb9d">973a90261b40d910bed02063b24bcb6d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-15 12:25:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+	"username":"bank",&#13;
+	"password":"bank",&#13;
+	"role":"ROOT_AUTHORITY"&#13;
+}</content>
+        <function_name>01.New Root Authority registration</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Guardian [ 01.New Root Authority registration ]</qualified_name>
+        <rest_endpoint>http://159.223.30.16:3002/api/v1/accounts/register</rest_endpoint>
+        <rest_message display_value="Guardian">12b964841b2505107eefc912604bcb65</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 12:22:00</sys_created_on>
+        <sys_id>722aa8841b2505107eefc912604bcb60</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>01.New Root Authority registration</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_rest_message_fn_722aa8841b2505107eefc912604bcb60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 16:53:26</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

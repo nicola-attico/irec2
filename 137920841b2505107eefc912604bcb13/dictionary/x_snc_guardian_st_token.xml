@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Token" max_length="40" name="x_snc_guardian_st_token" sizeclass="0" type="collection">
+        <element label="Admin Id" max_length="20" name="admin_id" type="string"/>
+        <element label="Admin Key" max_length="50" name="admin_key" type="string"/>
+        <element label="Associated" max_length="40" name="associated" type="boolean"/>
+        <element label="Decimals" max_length="40" name="decimals" type="integer"/>
+        <element label="Freeze Key" max_length="50" name="freeze_key" type="string"/>
+        <element label="Id" max_length="20" name="id" type="string"/>
+        <element label="Initial supply" max_length="100" name="initial_supply" type="string"/>
+        <element label="Kyc Key" max_length="50" name="kyc_key" type="string"/>
+        <element label="Supply Key" max_length="50" name="supply_key" type="string"/>
+        <element label="Token Id" max_length="20" name="token_id" type="string"/>
+        <element label="Token Name" max_length="50" name="token_name" type="string_full_utf8"/>
+        <element label="Token Symbol" max_length="20" name="token_symbol" type="string_full_utf8"/>
+        <element choice="1" label="Token type" max_length="40" name="token_type" type="choice">
+            <choice/>
+        </element>
+        <element label="Wipe Key" max_length="50" name="wipe_key" type="string"/>
+    </element>
+</database>

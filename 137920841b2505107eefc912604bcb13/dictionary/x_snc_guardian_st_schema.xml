@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Schema" max_length="40" name="x_snc_guardian_st_schema" sizeclass="0" type="collection">
+        <element label="Description" max_length="255" name="description" type="string_full_utf8"/>
+        <element label="Document" max_length="100000" name="document" type="string_full_utf8"/>
+        <element label="Entity" max_length="255" name="entity" type="string"/>
+        <element label="Hash" max_length="50" name="hash" type="string"/>
+        <element label="Id" max_length="50" name="id" type="string"/>
+        <element label="Name" max_length="50" name="name" type="string_full_utf8"/>
+        <element label="Status" max_length="50" name="status" type="string"/>
+        <element label="uuid" max_length="50" name="uuid" type="string"/>
+    </element>
+</database>

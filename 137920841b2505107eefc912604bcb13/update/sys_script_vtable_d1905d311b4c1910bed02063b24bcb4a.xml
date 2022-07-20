@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Token Association</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+    var u = new GlideRecord("x_snc_guardian_login")
+    u.get("user", gs.getUserID())
+    var jwt = u.jwt
+
+    var sm = new sn_ws.RESTMessageV2();
+    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/tokens")
+    sm.setHttpMethod("get")
+    sm.setRequestHeader("authorization", "bearer " + jwt)
+    var response = sm.execute()
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+    //gs.addInfoMessage(responseBody)
+
+    var body = JSON.parse(responseBody)
+
+    for (i = 0; i < body.length; i++) {
+
+        var row = {}
+
+		row.sys_id = body[i].tokenId
+        row.token_id = body[i].tokenId
+        row.token_name = body[i].tokenName
+        row.token_symbol = body[i].tokenSymbol
+        row.token_type = body[i].tokenType
+        row.associated = body[i].associated
+
+        v_table.addRow(row)
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 08:16:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1905d311b4c1910bed02063b24bcb4a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Token Association</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_d1905d311b4c1910bed02063b24bcb4a</sys_update_name>
+        <sys_updated_by>nicola</sys_updated_by>
+        <sys_updated_on>2022-06-21 09:41:51</sys_updated_on>
+        <table>x_snc_guardian_st_token_association</table>
+    </sys_script_vtable>
+</record_update>

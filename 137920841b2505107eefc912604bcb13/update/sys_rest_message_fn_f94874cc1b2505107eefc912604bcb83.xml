@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+    "uuid":"d018a6ce-71f0-4bc5-9380-6bae4d4bb5bb",&#13;
+    "status":"DRAFT",&#13;
+    "readonly":false,&#13;
+    "name":"iRec",&#13;
+    "description":"iRec application form",&#13;
+    "entity":"VC",&#13;
+    "owner":"",&#13;
+    "version":"",&#13;
+    "document":"{\"$id\":\"#d018a6ce-71f0-4bc5-9380-6bae4d4bb5bb\",\"$comment\":\"{ \\\"term\\\": \\\"d018a6ce-71f0-4bc5-9380-6bae4d4bb5bb\\\", \\\"@id\\\": \\\"https://localhost/schema#d018a6ce-71f0-4bc5-9380-6bae4d4bb5bb\\\" }\",\"title\":\"iRec\",\"description\":\"iRec application form\",\"type\":\"object\",\"properties\":{\"@context\":{\"oneOf\":[{\"type\":\"string\"},{\"type\":\"array\",\"items\":{\"type\":\"string\"}}],\"readOnly\":true},\"type\":{\"oneOf\":[{\"type\":\"string\"},{\"type\":\"array\",\"items\":{\"type\":\"string\"}}],\"readOnly\":true},\"id\":{\"type\":\"string\",\"readOnly\":true},\"field0\":{\"title\":\"Test field\",\"description\":\"Test field\",\"readOnly\":false,\"$comment\":\"{ \\\"term\\\": \\\"field0\\\", \\\"@id\\\": \\\"https://www.schema.org/text\\\" }\",\"type\":\"string\"},\"field1\":{\"title\":\"Required field\",\"description\":\"Required field\",\"readOnly\":false,\"$comment\":\"{ \\\"term\\\": \\\"field1\\\", \\\"@id\\\": \\\"https://www.schema.org/text\\\" }\",\"type\":\"string\"},\"field2\":{\"title\":\"Multiple field\",\"description\":\"Multiple field\",\"readOnly\":false,\"type\":\"array\",\"items\":{\"type\":\"string\"},\"$comment\":\"{ \\\"term\\\": \\\"field2\\\", \\\"@id\\\": \\\"https://www.schema.org/text\\\" }\"},\"policyId\":{\"title\":\"policyId\",\"description\":\"policyId\",\"readOnly\":true,\"$comment\":\"{ \\\"term\\\": \\\"policyId\\\", \\\"@id\\\": \\\"https://www.schema.org/text\\\" }\",\"type\":\"string\"}},\"required\":[\"@context\",\"type\",\"field1\",\"policyId\"],\"additionalProperties\":false}",&#13;
+}&#13;
+</content>
+        <function_name>05.iRec Schema Creation</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Guardian [ 05.iRec Schema Creation ]</qualified_name>
+        <rest_endpoint>http://159.223.30.16:3002/api/v1/schemas</rest_endpoint>
+        <rest_message display_value="Guardian">12b964841b2505107eefc912604bcb65</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 13:24:37</sys_created_on>
+        <sys_id>f94874cc1b2505107eefc912604bcb83</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>05.iRec Schema Creation</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_rest_message_fn_f94874cc1b2505107eefc912604bcb83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 13:47:37</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

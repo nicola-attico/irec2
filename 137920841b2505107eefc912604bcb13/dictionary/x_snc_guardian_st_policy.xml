@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Policy" max_length="40" name="x_snc_guardian_st_policy" sizeclass="0" type="collection">
+        <element label="Config" max_length="100000" name="config" type="string_full_utf8"/>
+        <element label="Creator" max_length="100" name="creator" type="string"/>
+        <element label="Description" max_length="100" name="description" type="string_full_utf8"/>
+        <element label="Id" max_length="50" name="id" type="string"/>
+        <element label="Message Id" max_length="20" name="message_id" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string_full_utf8"/>
+        <element label="Owner" max_length="100" name="owner" type="string"/>
+        <element label="Policy Roles" max_length="100" name="policy_roles" type="string"/>
+        <element label="Policy Tag" max_length="50" name="policy_tag" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DRAFT" value="DRAFT"/>
+                <element inactive_on_update="false" label="PUBLISH" value="PUBLISH"/>
+            </choice>
+        </element>
+        <element label="Topic Id" max_length="20" name="topic_id" type="string"/>
+        <element label="Version" max_length="20" name="version" type="string"/>
+    </element>
+</database>

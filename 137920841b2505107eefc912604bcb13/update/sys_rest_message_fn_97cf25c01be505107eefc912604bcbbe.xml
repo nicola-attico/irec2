@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+    "hederaAccountId":"0.0.29617061",&#13;
+    "hederaAccountKey":"302e020100300506032b657004220420a89c370d6030251fa25888cb9b4335fdd005dda45845df2e6bbf53055e151757",&#13;
+    "vcDocument":{&#13;
+        "name":"DD",&#13;
+        "type":"RootAuthority",&#13;
+        "@context":["https://localhost/schema"]&#13;
+    },&#13;
+    "addressBook":{&#13;
+        "appnetName":"Test Identity SDK appnet",&#13;
+        "didServerUrl":"http://localhost:3000/api/v1",&#13;
+        "didTopicMemo":"Test Identity SDK appnet DID topic",&#13;
+        "vcTopicMemo":"Test Identity SDK appnet VC topic"&#13;
+    }&#13;
+}</content>
+        <function_name>Create profile</function_name>
+        <http_method>put</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Guardian [ Create profile ]</qualified_name>
+        <rest_endpoint>http://159.223.30.16:3002/api/v1/profiles/bank</rest_endpoint>
+        <rest_message display_value="Guardian">12b964841b2505107eefc912604bcb65</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 17:27:11</sys_created_on>
+        <sys_id>97cf25c01be505107eefc912604bcbbe</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create profile</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_rest_message_fn_97cf25c01be505107eefc912604bcbbe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 17:30:55</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

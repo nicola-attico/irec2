@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Login" max_length="40" name="x_snc_guardian_login" sizeclass="2" type="collection">
+        <element label="Jwt" max_length="200" name="jwt" type="string"/>
+        <element label="Password" max_length="255" name="password" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Username" max_length="50" name="username" type="string"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

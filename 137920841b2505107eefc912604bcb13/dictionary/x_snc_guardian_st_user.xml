@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User" max_length="40" name="x_snc_guardian_st_user" sizeclass="0" type="collection">
+        <element label="Account Id" max_length="20" name="account_id" type="string"/>
+        <element label="Key" max_length="50" name="key" type="string"/>
+        <element label="parent" max_length="200" name="parent" type="string"/>
+        <element label="Role" max_length="255" name="role" type="string"/>
+        <element label="Topic Id" max_length="20" name="topic_id" type="string"/>
+        <element label="Username" max_length="255" name="username" type="string"/>
+    </element>
+</database>

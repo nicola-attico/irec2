@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_guardian.rootJwt</name>
+        <read_roles/>
+        <suffix>rootJwt</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-07 09:32:41</sys_created_on>
+        <sys_id>50a8e2f71b370510bed02063b24bcbac</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>x_snc_guardian.rootJwt</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_properties_50a8e2f71b370510bed02063b24bcbac</sys_update_name>
+        <sys_updated_by>green</sys_updated_by>
+        <sys_updated_on>2022-06-15 12:42:34</sys_updated_on>
+        <type>string</type>
+        <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjR3c2F5OGJqIiwiZGlkIjpudWxsLCJyb2xlIjoiUk9PVF9BVVRIT1JJVFkiLCJpYXQiOjE2NTUyOTY5Mzh9.EwAGYy4yZIlYcpJzn3QKC-0bSXk5e7K6blWG7LpBbH4</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=50a8e2f71b370510bed02063b24bcbac"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_properties_50a8e2f71b370510bed02063b24bcbac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_snc_guardian.rootJwt</name><read_roles/><suffix>rootJwt</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-07 09:32:41</sys_created_on><sys_id>50a8e2f71b370510bed02063b24bcbac</sys_id><sys_mod_count>15</sys_mod_count><sys_name>x_snc_guardian.rootJwt</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_properties_50a8e2f71b370510bed02063b24bcbac</sys_update_name><sys_updated_by>green</sys_updated_by><sys_updated_on>2022-06-15 12:42:34</sys_updated_on><type>string</type><value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjR3c2F5OGJqIiwiZGlkIjpudWxsLCJyb2xlIjoiUk9PVF9BVVRIT1JJVFkiLCJpYXQiOjE2NTUyOTY5Mzh9.EwAGYy4yZIlYcpJzn3QKC-0bSXk5e7K6blWG7LpBbH4</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=50a8e2f71b370510bed02063b24bcbac"/></record_update>]]></payload>
+        <payload_hash>1549381417</payload_hash>
+        <record_name>x_snc_guardian.rootJwt</record_name>
+        <reverted_from/>
+        <source>5379a0841b2505107eefc912604bcb83</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>green</sys_created_by>
+        <sys_created_on>2022-06-15 12:42:34</sys_created_on>
+        <sys_id>66d0e0aa1b40d910bed02063b24bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181676311db0000001</sys_recorded_at>
+        <sys_updated_by>green</sys_updated_by>
+        <sys_updated_on>2022-06-15 12:42:34</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>aed0e0aa9240d910606e8383e794525f</update_guid>
+        <update_guid_history>aed0e0aa9240d910606e8383e794525f:1549381417,06818ceacbcc9910d64d2020a24bd755:-1238774276,3b5deac280cc5910d4125a4d37982f2e:780309286,14cc62c299cc591065d58ac86f484438:2019058908,565b2e4256cc5910ef982be2de48c8cb:-963231910,e42b6a4265cc591086d5218f307e9687:-2121806241,37247db99e8c19102d4a2bd7faa4465a:-342053671,9ad339b9268c1910320746e99f99fa47:2060031278,7a2c9d79dc4c1910fed87ab0dba556f4:-1419990570,fddd880c26081510504707385515680f:-257338108,144d000ce008151065b0d8429c1b8da0:-329048136,f905df7bd8b70510e672788b7220bfc8:-1828152557,4bb4177b87b7051060f9d8502bf4526b:-329048136,a61eee3f48370510dd4870c469a0c8a0:331058574,ac5aea3b6d370510db952b6cadefdb46:-1253236338,8ba86eb7c23705109811527c4a4e7952:-329048136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-15 15:01:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>7eb7ef0f7fd4469c8dab1128c6842fa4</sys_id>
+        <sys_metadata>50a8e2f71b370510bed02063b24bcbac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian.rootJwt</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_properties_50a8e2f71b370510bed02063b24bcbac</sys_update_name>
+        <sys_update_version display_value="sys_properties_50a8e2f71b370510bed02063b24bcbac">66d0e0aa1b40d910bed02063b24bcb60</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-15 15:01:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

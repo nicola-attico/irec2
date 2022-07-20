@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="INSERT_OR_UPDATE">
+        <name>authorization</name>
+        <rest_message display_value="Guardian">12b964841b2505107eefc912604bcb65</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 17:08:30</sys_created_on>
+        <sys_id>98bb6d001be505107eefc912604bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authorization</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_rest_message_headers_98bb6d001be505107eefc912604bcb86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 17:08:30</sys_updated_on>
+        <value>bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJhbmsiLCJkaWQiOm51bGwsInJvbGUiOiJST09UX0FVVEhPUklUWSIsImlhdCI6MTY0MzkwNzg3MH0.SGzsJUdD1Y_DyE8M4xDHzX4A6Ui-1xIrVMnNDlIT5Y0</value>
+    </sys_rest_message_headers>
+</record_update>
