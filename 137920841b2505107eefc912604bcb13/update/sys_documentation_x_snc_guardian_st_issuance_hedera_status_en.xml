@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="hedera_status" label="Hedera Status" language="en" table="x_snc_guardian_st_issuance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hedera_status</element>
+            <help/>
+            <hint/>
+            <label>Hedera Status</label>
+            <language>en</language>
+            <name>x_snc_guardian_st_issuance</name>
+            <plural>Hedera Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-20 12:16:15</sys_created_on>
+            <sys_id>aa7a28bd1b3c9d507eefc912604bcb26</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Hedera Status</sys_name>
+            <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_guardian_st_issuance_hedera_status_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-20 12:16:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

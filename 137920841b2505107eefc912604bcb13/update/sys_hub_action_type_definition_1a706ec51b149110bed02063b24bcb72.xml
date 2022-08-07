@@ -13,7 +13,7 @@
         <description/>
         <ih_action>true</ih_action>
         <internal_name>create_device</internal_name>
-        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.parent}}","label":"action➛parent","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.account_id}}","label":"action➛account_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.role}}","label":"action➛role","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"ROOT_AUTHORITY","value":"ROOT_AUTHORITY","order":1.0},{"label":"USER","value":"USER","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1306fc6f-f355-4552-a330-038e8981032c"}},{"name":"{{action.access_token}}","label":"action➛access_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_id}}","label":"action➛message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_id}}","label":"action➛policy_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c7ac1f24-811e-4747-bb92-01e6e408ad29].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].account_id}}","label":"step➛Script step➛account_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].key}}","label":"step➛Script step➛key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b6c2ffda-6c1b-437e-98fe-8d9d8e120575].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].access_token}}","label":"step➛Script step➛access_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d1c6f008-ba2f-44e9-a788-adfe90c3b206].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].variable}}","label":"step➛Get Jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].jwt}}","label":"step➛Get Jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f7307785-058c-4e38-9159-da3b4b96e6c7].response_body}}","label":"step➛REST Step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].variable}}","label":"step➛Get create_application uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].create_application_uuid}}","label":"step➛Get create_application uuid➛create_application_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6943b54e-aa5a-4fab-9828-c4e3a553a130].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable}}","label":"step➛Get schema uuids➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable1}}","label":"step➛Get schema uuids➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable2}}","label":"step➛Get schema uuids➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable3}}","label":"step➛Get schema uuids➛variable3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable4}}","label":"step➛Get schema uuids➛variable4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable5}}","label":"step➛Get schema uuids➛variable5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable6}}","label":"step➛Get schema uuids➛variable6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable7}}","label":"step➛Get schema uuids➛variable7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_context}}","label":"step➛Get schema uuids➛schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_type}}","label":"step➛Get schema uuids➛schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_context}}","label":"step➛Get schema uuids➛field1_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_type}}","label":"step➛Get schema uuids➛field1_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_context}}","label":"step➛Get schema uuids➛field2_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_type}}","label":"step➛Get schema uuids➛field2_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_context}}","label":"step➛Get schema uuids➛field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_type}}","label":"step➛Get schema uuids➛field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[152e8844-bf27-4685-813d-96bdb7ee2f46].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].variable}}","label":"step➛Get approve_devices_grid uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].approve_device_grid_uuid}}","label":"step➛Get approve_devices_grid uuid➛approve_device_grid_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].variable}}","label":"step➛Get create_device_form_uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].create_device_form_uuid}}","label":"step➛Get create_device_form_uuid➛create_device_form_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4fb3cbb3-db61-4690-9d4b-526fe8930910].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable2}}","label":"step➛Script step➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset}}","label":"step➛Script step➛device_preset","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_presetfields}}","label":"step➛Script step➛device_presetFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset_fields}}","label":"step➛Script step➛device_preset_fields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_context}}","label":"step➛Script step➛device_schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_type}}","label":"step➛Script step➛device_schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_context}}","label":"step➛Script step➛device_schema_field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_type}}","label":"step➛Script step➛device_schema_field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_context}}","label":"step➛Script step➛device_schema_field4_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_type}}","label":"step➛Script step➛device_schema_field4_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_context}}","label":"step➛Script step➛device_schema_field5_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_type}}","label":"step➛Script step➛device_schema_field5_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].body}}","label":"step➛Script step➛body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.parent}}","label":"action➛parent","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.account_id}}","label":"action➛account_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.role}}","label":"action➛role","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"ROOT_AUTHORITY","value":"ROOT_AUTHORITY","order":1.0},{"label":"USER","value":"USER","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1306fc6f-f355-4552-a330-038e8981032c"}},{"name":"{{action.access_token}}","label":"action➛access_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_id}}","label":"action➛message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_id}}","label":"action➛policy_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_version}}","label":"action➛policy_version","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.property_name}}","label":"action➛property_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.property_value}}","label":"action➛property_value","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.token_id}}","label":"action➛token_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registrant}}","label":"action➛registrant","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registrant_id}}","label":"action➛registrant_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date}}","label":"action➛date","type":"action","ref":"","reference_display":"","base_type":"glide_date","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c7ac1f24-811e-4747-bb92-01e6e408ad29].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].account_id}}","label":"step➛Script step➛account_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].key}}","label":"step➛Script step➛key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b6c2ffda-6c1b-437e-98fe-8d9d8e120575].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].access_token}}","label":"step➛Script step➛access_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d1c6f008-ba2f-44e9-a788-adfe90c3b206].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].variable}}","label":"step➛Get Jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].jwt}}","label":"step➛Get Jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[20757ba7-b5b5-47d5-8ae2-4393d1440b4e].variable}}","label":"step➛Get JWT➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[20757ba7-b5b5-47d5-8ae2-4393d1440b4e].jwt}}","label":"step➛Get JWT➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[cb5ada3e-d2b9-40ea-8b94-684c80cbfeb4].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cb5ada3e-d2b9-40ea-8b94-684c80cbfeb4].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[45a62257-eda7-43e0-b01c-dd67b8c9d820].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[45a62257-eda7-43e0-b01c-dd67b8c9d820].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[deecbd21-ed09-4daa-851a-1668123afd64].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[deecbd21-ed09-4daa-851a-1668123afd64].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[92df0419-fd1d-4620-8e07-b0e9718652e2].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[7a8af86b-8b3a-4ac4-a40e-9c71f03f2dfa].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f7307785-058c-4e38-9159-da3b4b96e6c7].response_body}}","label":"step➛REST Step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].variable}}","label":"step➛Get create_application uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].create_application_uuid}}","label":"step➛Get create_application uuid➛create_application_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6943b54e-aa5a-4fab-9828-c4e3a553a130].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable}}","label":"step➛Get schema uuids➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable1}}","label":"step➛Get schema uuids➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable2}}","label":"step➛Get schema uuids➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable3}}","label":"step➛Get schema uuids➛variable3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable4}}","label":"step➛Get schema uuids➛variable4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable5}}","label":"step➛Get schema uuids➛variable5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable6}}","label":"step➛Get schema uuids➛variable6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable7}}","label":"step➛Get schema uuids➛variable7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_context}}","label":"step➛Get schema uuids➛schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_type}}","label":"step➛Get schema uuids➛schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_context}}","label":"step➛Get schema uuids➛field1_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_type}}","label":"step➛Get schema uuids➛field1_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_context}}","label":"step➛Get schema uuids➛field2_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_type}}","label":"step➛Get schema uuids➛field2_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_context}}","label":"step➛Get schema uuids➛field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_type}}","label":"step➛Get schema uuids➛field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[152e8844-bf27-4685-813d-96bdb7ee2f46].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].variable}}","label":"step➛Get approve_devices_grid uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].approve_device_grid_uuid}}","label":"step➛Get approve_devices_grid uuid➛approve_device_grid_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].variable}}","label":"step➛Get create_device_form_uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].create_device_form_uuid}}","label":"step➛Get create_device_form_uuid➛create_device_form_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4fb3cbb3-db61-4690-9d4b-526fe8930910].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable2}}","label":"step➛Script step➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset}}","label":"step➛Script step➛device_preset","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_presetfields}}","label":"step➛Script step➛device_presetFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset_fields}}","label":"step➛Script step➛device_preset_fields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_context}}","label":"step➛Script step➛device_schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_type}}","label":"step➛Script step➛device_schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_context}}","label":"step➛Script step➛device_schema_field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_type}}","label":"step➛Script step➛device_schema_field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_context}}","label":"step➛Script step➛device_schema_field4_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_type}}","label":"step➛Script step➛device_schema_field4_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_context}}","label":"step➛Script step➛device_schema_field5_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_type}}","label":"step➛Script step➛device_schema_field5_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].body}}","label":"step➛Script step➛body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c8cbd308-00d8-472a-bcd6-993114d48752].record.owner}}","label":"step➛Look Up Record step➛Registrant Record➛Owner","type":"step","ref":"","reference_display":"Owner","base_type":"string","parent_table_name":"x_snc_guardian_st_registrant","column_name":"owner","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>f6dc76a21b14d510bed02063b24bcb7c</master_snapshot>
         <name>Create device</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1a706ec51b149110bed02063b24bcb72</sys_id>
-        <sys_mod_count>89</sys_mod_count>
+        <sys_mod_count>112</sys_mod_count>
         <sys_name>Create device</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1a706ec51b149110bed02063b24bcb72</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:40:02</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:48</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -61,14 +61,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-23 16:36:04</sys_created_on>
         <sys_id>cd0362891b149110bed02063b24bcbdc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-23 16:54:20</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDfc036289c2149110314c3ceb4323b8ca":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDfc036289c2149110314c3ceb4323b8ca.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"166b4b31-766b-4887-bfb8-304f66c3d1de\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDfc036289c2149110314c3ceb4323b8ca\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2022-08-01 14:52:54</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDfc036289c2149110314c3ceb4323b8ca":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDfc036289c2149110314c3ceb4323b8ca.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"166b4b31-766b-4887-bfb8-304f66c3d1de\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDfc036289c2149110314c3ceb4323b8ca\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">340362891b149110bed02063b24bcbce</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_1a706ec51b149110bed02063b24bcb72^id=1a706ec51b149110bed02063b24bcb72"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=1a706ec51b149110bed02063b24bcb72^sys_idNOT IN01e1a2491b149110bed02063b24bcbfc,01e1e2491b149110bed02063b24bcb28,17c8ee8d1b149110bed02063b24bcbf2,300362891b149110bed02063b24bcba7,bce1a2491b149110bed02063b24bcbd0,f40362891b149110bed02063b24bcbbe"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=1a706ec51b149110bed02063b24bcb72^sys_idNOT IN01e1a2491b149110bed02063b24bcbfc,01e1e2491b149110bed02063b24bcb28,17c8ee8d1b149110bed02063b24bcbf2,300362891b149110bed02063b24bcba7,9ea187a51bc95d107eefc912604bcbde,bce1a2491b149110bed02063b24bcbd0,f40362891b149110bed02063b24bcbbe"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Create device">1a706ec51b149110bed02063b24bcb72</action>
         <cid>152e8844-bf27-4685-813d-96bdb7ee2f46</cid>
@@ -741,17 +741,17 @@ outputs.create_device_form_uuid = response.id
         <inputs/>
         <inputs/>
         <label>REST step - Create Device</label>
-        <order>6</order>
+        <order>7</order>
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-23 17:01:21</sys_created_on>
         <sys_id>17c8ee8d1b149110bed02063b24bcbf2</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 12:32:16</sys_updated_on>
+        <sys_updated_on>2022-08-01 14:52:53</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=17c8ee8d1b149110bed02063b24bcbf2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1556,6 +1556,72 @@ outputs.create_device_form_uuid = response.id
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Create device">1a706ec51b149110bed02063b24bcb72</action>
+        <cid>c8cbd308-00d8-472a-bcd6-993114d48752</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Record step</label>
+        <order>5</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:54:01</sys_created_on>
+        <sys_id>9ea187a51bc95d107eefc912604bcbde</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 16:09:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9ea187a51bc95d107eefc912604bcbde</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:54:01</sys_created_on>
+        <sys_id>16a1c7a51bc95d107eefc912604bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:54:01</sys_updated_on>
+        <value>x_snc_guardian_st_registrant</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>9ea187a51bc95d107eefc912604bcbde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:54:01</sys_created_on>
+        <sys_id>92a1c7a51bc95d107eefc912604bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 16:09:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>sys_idSTARTSWITH{{action.registrant_id}}^policy_id={{action.policy_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>9ea187a51bc95d107eefc912604bcbde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:54:01</sys_created_on>
+        <sys_id>dea1c7a51bc95d107eefc912604bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:54:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_9ea187a51bc95d107eefc912604bcbde"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create device">1a706ec51b149110bed02063b24bcb72</action>
         <cid>1feb1730-62d0-4942-9411-d82b46674980</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1729,17 +1795,17 @@ outputs.create_device_form_uuid = response.id
         <icon/>
         <inputs/>
         <label>Script step</label>
-        <order>5</order>
+        <order>6</order>
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-23 16:36:03</sys_created_on>
         <sys_id>f40362891b149110bed02063b24bcbbe</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:35:00</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f40362891b149110bed02063b24bcbbe"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1750,9 +1816,9 @@ outputs.create_device_form_uuid = response.id
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-23 16:36:03</sys_created_on>
         <sys_id>740362891b149110bed02063b24bcbc8</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:35:00</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 if (!Object.assign) {
@@ -1830,6 +1896,7 @@ var body = {
         "@context": [
             device_schema_context
         ],
+        "field0": inputs.registrant_did,
         "field1": "2022-05-11",
         "field2": "Is the Registrant also the owner of the Device? (provide evidence)",
         "field3": {
@@ -1896,6 +1963,20 @@ outputs.body = JSON.stringify(body)
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>f40362891b149110bed02063b24bcbbe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:53</sys_created_on>
+        <sys_id>7d6143a51bc95d107eefc912604bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:53</sys_updated_on>
+        <value/>
+        <variable display_value="">a16143a51bc95d107eefc912604bcbdf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f40362891b149110bed02063b24bcbbe</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -1919,6 +2000,30 @@ outputs.body = JSON.stringify(body)
         <sys_updated_on>2022-06-23 16:36:03</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date</field>
+        <id>f40362891b149110bed02063b24bcbbe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:53</sys_created_on>
+        <sys_id>f56143a51bc95d107eefc912604bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f40362891b149110bed02063b24bcbbe</table>
+        <value>{{action.date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>registrant_did</field>
+        <id>f40362891b149110bed02063b24bcbbe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:13</sys_created_on>
+        <sys_id>33e10fa51bc95d107eefc912604bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:13</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f40362891b149110bed02063b24bcbbe</table>
+        <value>{{step[c8cbd308-00d8-472a-bcd6-993114d48752].record.owner}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response</field>
@@ -1946,7 +2051,88 @@ outputs.body = JSON.stringify(body)
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f40362891b149110bed02063b24bcbbe^id=f40362891b149110bed02063b24bcbbe"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=f40362891b149110bed02063b24bcbbe"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=f40362891b149110bed02063b24bcbbe^sys_idNOT INb80362891b149110bed02063b24bcbc1"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f40362891b149110bed02063b24bcbbe^sys_idNOT INa16143a51bc95d107eefc912604bcbdf,b80362891b149110bed02063b24bcbc1,ed6143a51bc95d107eefc912604bcbe2"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">f40362891b149110bed02063b24bcbbe</model>
+        <model_id>f40362891b149110bed02063b24bcbbe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f40362891b149110bed02063b24bcbbe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:53</sys_created_on>
+        <sys_id>a16143a51bc95d107eefc912604bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2017,6 +2203,87 @@ outputs.body = JSON.stringify(body)
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-06-23 16:36:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>registrant_did</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f40362891b149110bed02063b24bcbbe</model>
+        <model_id>f40362891b149110bed02063b24bcbbe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f40362891b149110bed02063b24bcbbe</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:53</sys_created_on>
+        <sys_id>ed6143a51bc95d107eefc912604bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2135,7 +2402,171 @@ outputs.body = JSON.stringify(body)
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=1a706ec51b149110bed02063b24bcb72^sys_idNOT INb4e1a2491b149110bed02063b24bcbca"/>
+    <sys_hub_action_input action="delete_multiple" query="model=1a706ec51b149110bed02063b24bcb72^sys_idNOT IN516143a51bc95d107eefc912604bcb5e,516143a51bc95d107eefc912604bcb63,b4e1a2491b149110bed02063b24bcbca"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=de4067c9-9c9d-4dd7-8eea-f542bd06ed0c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>registrant_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>registrant_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create device">1a706ec51b149110bed02063b24bcb72</model>
+        <model_id>1a706ec51b149110bed02063b24bcb72</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:51</sys_created_on>
+        <sys_id>516143a51bc95d107eefc912604bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=516143a51bc95d107eefc912604bcb5e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=620e7b94-2fa7-4ef0-ba6e-60c9e78efcf9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create device">1a706ec51b149110bed02063b24bcb72</model>
+        <model_id>1a706ec51b149110bed02063b24bcb72</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:51</sys_created_on>
+        <sys_id>516143a51bc95d107eefc912604bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=516143a51bc95d107eefc912604bcb63"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2401,7 +2832,7 @@ outputs.body = JSON.stringify(body)
         <sys_updated_on>2022-06-23 16:31:10</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=95e1e2491b149110bed02063b24bcb3b"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72^sys_idNOT IN30e1a2491b149110bed02063b24bcbcf"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72^sys_idNOT IN30e1a2491b149110bed02063b24bcbcf,916143a51bc95d107eefc912604bcb62,d96143a51bc95d107eefc912604bcb66"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>policy_id</element>
         <help/>
@@ -2422,6 +2853,52 @@ outputs.body = JSON.stringify(body)
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-06-23 16:31:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>registrant_id</element>
+        <help/>
+        <hint/>
+        <label>registrant_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:51</sys_created_on>
+        <sys_id>916143a51bc95d107eefc912604bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>date</element>
+        <help/>
+        <hint/>
+        <label>date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1a706ec51b149110bed02063b24bcb72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:52:52</sys_created_on>
+        <sys_id>d96143a51bc95d107eefc912604bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:52:52</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2478,17 +2955,17 @@ outputs.body = JSON.stringify(body)
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create device">1a706ec51b149110bed02063b24bcb72</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"68ecf6a21b14d510bed02063b24bcbc6","name":"plan","plan_signature":null}}</plan>
-        <snapshot>d3aaab6e1b94d510bed02063b24bcbbf</snapshot>
+        <snapshot>e5739fa91b0d5d107eefc912604bcb05</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:19:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>68ecf6a21b14d510bed02063b24bcbc6</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:40:06</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:52</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2502,7 +2979,7 @@ outputs.body = JSON.stringify(body)
         <copied_from_name/>
         <description/>
         <internal_name>create_device</internal_name>
-        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.parent}}","label":"action➛parent","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.account_id}}","label":"action➛account_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.role}}","label":"action➛role","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"ROOT_AUTHORITY","value":"ROOT_AUTHORITY","order":1.0},{"label":"USER","value":"USER","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1306fc6f-f355-4552-a330-038e8981032c"}},{"name":"{{action.access_token}}","label":"action➛access_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_id}}","label":"action➛message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_id}}","label":"action➛policy_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c7ac1f24-811e-4747-bb92-01e6e408ad29].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].account_id}}","label":"step➛Script step➛account_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].key}}","label":"step➛Script step➛key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b6c2ffda-6c1b-437e-98fe-8d9d8e120575].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].access_token}}","label":"step➛Script step➛access_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d1c6f008-ba2f-44e9-a788-adfe90c3b206].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].variable}}","label":"step➛Get Jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].jwt}}","label":"step➛Get Jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f7307785-058c-4e38-9159-da3b4b96e6c7].response_body}}","label":"step➛REST Step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].variable}}","label":"step➛Get create_application uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].create_application_uuid}}","label":"step➛Get create_application uuid➛create_application_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6943b54e-aa5a-4fab-9828-c4e3a553a130].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable}}","label":"step➛Get schema uuids➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable1}}","label":"step➛Get schema uuids➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable2}}","label":"step➛Get schema uuids➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable3}}","label":"step➛Get schema uuids➛variable3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable4}}","label":"step➛Get schema uuids➛variable4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable5}}","label":"step➛Get schema uuids➛variable5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable6}}","label":"step➛Get schema uuids➛variable6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable7}}","label":"step➛Get schema uuids➛variable7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_context}}","label":"step➛Get schema uuids➛schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_type}}","label":"step➛Get schema uuids➛schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_context}}","label":"step➛Get schema uuids➛field1_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_type}}","label":"step➛Get schema uuids➛field1_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_context}}","label":"step➛Get schema uuids➛field2_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_type}}","label":"step➛Get schema uuids➛field2_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_context}}","label":"step➛Get schema uuids➛field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_type}}","label":"step➛Get schema uuids➛field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[152e8844-bf27-4685-813d-96bdb7ee2f46].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].variable}}","label":"step➛Get approve_devices_grid uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].approve_device_grid_uuid}}","label":"step➛Get approve_devices_grid uuid➛approve_device_grid_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].variable}}","label":"step➛Get create_device_form_uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].create_device_form_uuid}}","label":"step➛Get create_device_form_uuid➛create_device_form_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4fb3cbb3-db61-4690-9d4b-526fe8930910].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable2}}","label":"step➛Script step➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset}}","label":"step➛Script step➛device_preset","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_presetfields}}","label":"step➛Script step➛device_presetFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset_fields}}","label":"step➛Script step➛device_preset_fields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_context}}","label":"step➛Script step➛device_schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_type}}","label":"step➛Script step➛device_schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_context}}","label":"step➛Script step➛device_schema_field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_type}}","label":"step➛Script step➛device_schema_field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_context}}","label":"step➛Script step➛device_schema_field4_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_type}}","label":"step➛Script step➛device_schema_field4_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_context}}","label":"step➛Script step➛device_schema_field5_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_type}}","label":"step➛Script step➛device_schema_field5_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].body}}","label":"step➛Script step➛body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.parent}}","label":"action➛parent","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.account_id}}","label":"action➛account_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.role}}","label":"action➛role","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"ROOT_AUTHORITY","value":"ROOT_AUTHORITY","order":1.0},{"label":"USER","value":"USER","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1306fc6f-f355-4552-a330-038e8981032c"}},{"name":"{{action.access_token}}","label":"action➛access_token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.message_id}}","label":"action➛message_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_id}}","label":"action➛policy_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_version}}","label":"action➛policy_version","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.property_name}}","label":"action➛property_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.property_value}}","label":"action➛property_value","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.token_id}}","label":"action➛token_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registrant}}","label":"action➛registrant","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registrant_id}}","label":"action➛registrant_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date}}","label":"action➛date","type":"action","ref":"","reference_display":"","base_type":"glide_date","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c7ac1f24-811e-4747-bb92-01e6e408ad29].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].account_id}}","label":"step➛Script step➛account_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a901efda-ea3c-46fd-966b-efe9a37bd2ed].key}}","label":"step➛Script step➛key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b6c2ffda-6c1b-437e-98fe-8d9d8e120575].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[707225b4-b982-488b-a790-f933acd3f189].access_token}}","label":"step➛Script step➛access_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d1c6f008-ba2f-44e9-a788-adfe90c3b206].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2eea33a4-ab60-48e7-8b52-2b3f3ba7dfc1].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].variable}}","label":"step➛Get Jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[44862b07-63fd-4afb-9c24-a280eda8ef3a].jwt}}","label":"step➛Get Jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[20757ba7-b5b5-47d5-8ae2-4393d1440b4e].variable}}","label":"step➛Get JWT➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[20757ba7-b5b5-47d5-8ae2-4393d1440b4e].jwt}}","label":"step➛Get JWT➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[cb5ada3e-d2b9-40ea-8b94-684c80cbfeb4].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[cb5ada3e-d2b9-40ea-8b94-684c80cbfeb4].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[45a62257-eda7-43e0-b01c-dd67b8c9d820].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[45a62257-eda7-43e0-b01c-dd67b8c9d820].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[deecbd21-ed09-4daa-851a-1668123afd64].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[deecbd21-ed09-4daa-851a-1668123afd64].did}}","label":"step➛Script step➛did","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[92df0419-fd1d-4620-8e07-b0e9718652e2].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[7a8af86b-8b3a-4ac4-a40e-9c71f03f2dfa].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f4fd14f8-db5b-45f3-8cb1-e19c8cda6e69].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f7307785-058c-4e38-9159-da3b4b96e6c7].response_body}}","label":"step➛REST Step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].variable}}","label":"step➛Get create_application uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[22333e0d-2e19-4abe-a58f-8b4f0a33f728].create_application_uuid}}","label":"step➛Get create_application uuid➛create_application_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6943b54e-aa5a-4fab-9828-c4e3a553a130].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable}}","label":"step➛Get schema uuids➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable1}}","label":"step➛Get schema uuids➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable2}}","label":"step➛Get schema uuids➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable3}}","label":"step➛Get schema uuids➛variable3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable4}}","label":"step➛Get schema uuids➛variable4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable5}}","label":"step➛Get schema uuids➛variable5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable6}}","label":"step➛Get schema uuids➛variable6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].variable7}}","label":"step➛Get schema uuids➛variable7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_context}}","label":"step➛Get schema uuids➛schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].schema_type}}","label":"step➛Get schema uuids➛schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_context}}","label":"step➛Get schema uuids➛field1_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field1_type}}","label":"step➛Get schema uuids➛field1_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_context}}","label":"step➛Get schema uuids➛field2_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field2_type}}","label":"step➛Get schema uuids➛field2_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_context}}","label":"step➛Get schema uuids➛field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[b8d60b92-2983-4c51-b7e9-069416adb26d].field3_type}}","label":"step➛Get schema uuids➛field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].variable}}","label":"step➛Get jwt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[1feb1730-62d0-4942-9411-d82b46674980].jwt}}","label":"step➛Get jwt➛jwt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[152e8844-bf27-4685-813d-96bdb7ee2f46].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].variable}}","label":"step➛Get approve_devices_grid uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6367feb4-19c4-4343-b1cc-a9a3bedcc6b2].approve_device_grid_uuid}}","label":"step➛Get approve_devices_grid uuid➛approve_device_grid_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].variable}}","label":"step➛Get create_device_form_uuid➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[898f4fb7-4c51-4ddb-85ba-129dbd1e1210].create_device_form_uuid}}","label":"step➛Get create_device_form_uuid➛create_device_form_uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4fb3cbb3-db61-4690-9d4b-526fe8930910].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].variable2}}","label":"step➛Script step➛variable2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset}}","label":"step➛Script step➛device_preset","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_presetfields}}","label":"step➛Script step➛device_presetFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_preset_fields}}","label":"step➛Script step➛device_preset_fields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_context}}","label":"step➛Script step➛device_schema_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_type}}","label":"step➛Script step➛device_schema_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_context}}","label":"step➛Script step➛device_schema_field3_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field3_type}}","label":"step➛Script step➛device_schema_field3_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_context}}","label":"step➛Script step➛device_schema_field4_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field4_type}}","label":"step➛Script step➛device_schema_field4_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_context}}","label":"step➛Script step➛device_schema_field5_context","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].device_schema_field5_type}}","label":"step➛Script step➛device_schema_field5_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[342acdd3-f510-4eb0-8560-73e03c93e42c].body}}","label":"step➛Script step➛body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c8cbd308-00d8-472a-bcd6-993114d48752].record.owner}}","label":"step➛Look Up Record step➛Registrant Record➛Owner","type":"step","ref":"","reference_display":"Owner","base_type":"string","parent_table_name":"x_snc_guardian_st_registrant","column_name":"owner","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Create device</name>
         <natlang/>
@@ -2514,7 +2991,7 @@ outputs.body = JSON.stringify(body)
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6dc76a21b14d510bed02063b24bcb7c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2522,7 +2999,7 @@ outputs.body = JSON.stringify(body)
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 12:28:46</sys_updated_on>
+        <sys_updated_on>2022-08-01 14:55:24</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2536,10 +3013,10 @@ outputs.body = JSON.stringify(body)
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:19:54</sys_created_on>
         <sys_id>a3dcb6a21b14d510bed02063b24bcb61</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 10:19:54</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD93dcb6a2e714d510abc38331575d754f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD93dcb6a2e714d510abc38331575d754f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"166b4b31-766b-4887-bfb8-304f66c3d1de\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD93dcb6a2e714d510abc38331575d754f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD93dcb6a2e714d510abc38331575d754f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD93dcb6a2e714d510abc38331575d754f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"166b4b31-766b-4887-bfb8-304f66c3d1de\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD93dcb6a2e714d510abc38331575d754f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">97dcb6a21b14d510bed02063b24bcb52</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2557,7 +3034,7 @@ outputs.body = JSON.stringify(body)
         <variable display_value="Don't Treat as Error">5fdcb6a21b14d510bed02063b24bcb57</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_f6dc76a21b14d510bed02063b24bcb7c^id=f6dc76a21b14d510bed02063b24bcb7c"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN03dc76a21b14d510bed02063b24bcbf2,83dc76a21b14d510bed02063b24bcbc1,87dc76a21b14d510bed02063b24bcbae,9fdcb6a21b14d510bed02063b24bcb35,b6dc76a21b14d510bed02063b24bcb96,badc76a21b14d510bed02063b24bcb88"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN03dc76a21b14d510bed02063b24bcbf2,7af103e51bc95d107eefc912604bcb04,83dc76a21b14d510bed02063b24bcbc1,87dc76a21b14d510bed02063b24bcbae,9fdcb6a21b14d510bed02063b24bcb35,b6dc76a21b14d510bed02063b24bcb96,badc76a21b14d510bed02063b24bcb88"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Create device">f6dc76a21b14d510bed02063b24bcb7c</action>
         <cid>342acdd3-f510-4eb0-8560-73e03c93e42c</cid>
@@ -2568,19 +3045,33 @@ outputs.body = JSON.stringify(body)
         <icon/>
         <inputs/>
         <label>Script step</label>
-        <order>5</order>
+        <order>6</order>
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:19:52</sys_created_on>
         <sys_id>03dc76a21b14d510bed02063b24bcbf2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:37:31</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:47</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=03dc76a21b14d510bed02063b24bcbf2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>03dc76a21b14d510bed02063b24bcbf2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:26</sys_created_on>
+        <sys_id>87f103e51bc95d107eefc912604bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <value/>
+        <variable display_value="date">8bf103e51bc95d107eefc912604bcb0f</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>03dc76a21b14d510bed02063b24bcbf2</document_key>
@@ -2589,9 +3080,9 @@ outputs.body = JSON.stringify(body)
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:19:53</sys_created_on>
         <sys_id>9fdcb6a21b14d510bed02063b24bcb31</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 13:37:31</sys_updated_on>
+        <sys_updated_on>2022-08-01 16:11:48</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 if (!Object.assign) {
@@ -2669,6 +3160,7 @@ var body = {
         "@context": [
             device_schema_context
         ],
+        "field0": inputs.registrant_did,
         "field1": "2022-05-11",
         "field2": "Is the Registrant also the owner of the Device? (provide evidence)",
         "field3": {
@@ -2760,6 +3252,30 @@ outputs.body = JSON.stringify(body)
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date</field>
+        <id>03dc76a21b14d510bed02063b24bcbf2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:26</sys_created_on>
+        <sys_id>43f103e51bc95d107eefc912604bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_03dc76a21b14d510bed02063b24bcbf2</table>
+        <value>{{action.date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>registrant_did</field>
+        <id>03dc76a21b14d510bed02063b24bcbf2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:26</sys_created_on>
+        <sys_id>07f103e51bc95d107eefc912604bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_03dc76a21b14d510bed02063b24bcbf2</table>
+        <value>{{step[c8cbd308-00d8-472a-bcd6-993114d48752].record.owner}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response</field>
         <id>03dc76a21b14d510bed02063b24bcbf2</id>
         <sys_created_by>admin</sys_created_by>
@@ -2785,7 +3301,169 @@ outputs.body = JSON.stringify(body)
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_03dc76a21b14d510bed02063b24bcbf2^id=03dc76a21b14d510bed02063b24bcbf2"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=03dc76a21b14d510bed02063b24bcbf2"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=03dc76a21b14d510bed02063b24bcbf2^sys_idNOT INc3dc76a21b14d510bed02063b24bcbf5"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=03dc76a21b14d510bed02063b24bcbf2^sys_idNOT IN8bf103e51bc95d107eefc912604bcb0f,8bf103e51bc95d107eefc912604bcb13,c3dc76a21b14d510bed02063b24bcbf5"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>date</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">03dc76a21b14d510bed02063b24bcbf2</model>
+        <model_id>03dc76a21b14d510bed02063b24bcbf2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_03dc76a21b14d510bed02063b24bcbf2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:26</sys_created_on>
+        <sys_id>8bf103e51bc95d107eefc912604bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>registrant_did</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>registrant_did</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">03dc76a21b14d510bed02063b24bcbf2</model>
+        <model_id>03dc76a21b14d510bed02063b24bcbf2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_03dc76a21b14d510bed02063b24bcbf2</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:26</sys_created_on>
+        <sys_id>8bf103e51bc95d107eefc912604bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2974,6 +3652,72 @@ outputs.body = JSON.stringify(body)
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create device">f6dc76a21b14d510bed02063b24bcb7c</action>
+        <cid>c8cbd308-00d8-472a-bcd6-993114d48752</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Record step</label>
+        <order>5</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>7af103e51bc95d107eefc912604bcb04</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 16:10:00</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7af103e51bc95d107eefc912604bcb04"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7af103e51bc95d107eefc912604bcb04</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>3ef103e51bc95d107eefc912604bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
+        <value>x_snc_guardian_st_registrant</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7af103e51bc95d107eefc912604bcb04"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7af103e51bc95d107eefc912604bcb04</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>baf103e51bc95d107eefc912604bcb09</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 16:10:00</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>sys_idSTARTSWITH{{action.registrant_id}}^policy_id={{action.policy_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>7af103e51bc95d107eefc912604bcb04</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>f6f103e51bc95d107eefc912604bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7af103e51bc95d107eefc912604bcb04"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7af103e51bc95d107eefc912604bcb04"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7af103e51bc95d107eefc912604bcb04"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_7af103e51bc95d107eefc912604bcb04"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Create device">f6dc76a21b14d510bed02063b24bcb7c</action>
         <cid>4fb3cbb3-db61-4690-9d4b-526fe8930910</cid>
@@ -3646,17 +4390,17 @@ outputs.create_device_form_uuid = response.id
         <inputs/>
         <inputs/>
         <label>REST step - Create Device</label>
-        <order>6</order>
+        <order>7</order>
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:19:53</sys_created_on>
         <sys_id>9fdcb6a21b14d510bed02063b24bcb35</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 12:32:28</sys_updated_on>
+        <sys_updated_on>2022-08-01 14:55:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9fdcb6a21b14d510bed02063b24bcb35"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4624,7 +5368,7 @@ outputs.create_device_form_uuid = response.id
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN72dc76a21b14d510bed02063b24bcb80"/>
+    <sys_hub_action_input action="delete_multiple" query="model=f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN72dc76a21b14d510bed02063b24bcb80,b2f1cfa51bc95d107eefc912604bcbb8,baf1cfa51bc95d107eefc912604bcbbc"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4707,6 +5451,170 @@ outputs.create_device_form_uuid = response.id
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=72dc76a21b14d510bed02063b24bcb80"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=de4067c9-9c9d-4dd7-8eea-f542bd06ed0c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>registrant_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>registrant_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create device">f6dc76a21b14d510bed02063b24bcb7c</model>
+        <model_id>f6dc76a21b14d510bed02063b24bcb7c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>b2f1cfa51bc95d107eefc912604bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b2f1cfa51bc95d107eefc912604bcbb8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=620e7b94-2fa7-4ef0-ba6e-60c9e78efcf9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create device">f6dc76a21b14d510bed02063b24bcb7c</model>
+        <model_id>f6dc76a21b14d510bed02063b24bcb7c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>baf1cfa51bc95d107eefc912604bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=baf1cfa51bc95d107eefc912604bcbbc"/>
     <sys_hub_action_output action="delete_multiple" query="model=f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN5fdcb6a21b14d510bed02063b24bcb57,97dcb6a21b14d510bed02063b24bcb52"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -4890,7 +5798,7 @@ outputs.create_device_form_uuid = response.id
         <sys_updated_on>2022-06-28 10:19:54</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=6fdcb6a21b14d510bed02063b24bcb62"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN3adc76a21b14d510bed02063b24bcb86"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c^sys_idNOT IN3adc76a21b14d510bed02063b24bcb86,f2f1cfa51bc95d107eefc912604bcbc0,faf1cfa51bc95d107eefc912604bcbbb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>policy_id</element>
         <help/>
@@ -4911,6 +5819,52 @@ outputs.create_device_form_uuid = response.id
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-06-28 10:19:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>date</element>
+        <help/>
+        <hint/>
+        <label>date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>f2f1cfa51bc95d107eefc912604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>registrant_id</element>
+        <help/>
+        <hint/>
+        <label>registrant_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f6dc76a21b14d510bed02063b24bcb7c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 14:55:25</sys_created_on>
+        <sys_id>faf1cfa51bc95d107eefc912604bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 14:55:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4966,6 +5920,6 @@ outputs.create_device_form_uuid = response.id
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1a706ec51b149110bed02063b24bcb72</sys_id>
         <latest_snapshot>f6dc76a21b14d510bed02063b24bcb7c</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch4-hotfix1-06-10-2022_06-12-2022_2316.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

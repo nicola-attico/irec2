@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Mint Document</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+    try {
+        var u = new GlideRecord("x_snc_guardian_login")
+        u.get("user", gs.getUserID())
+        var jwt = u.jwt
+
+        var vp_hash, policy_id, token_id
+        if (v_query.getParameter("verifiable_presentation")) {
+            vp_hash = v_query.getParameter("verifiable_presentation").split("@")[0].toString()
+            //gs.addInfoMessage("vp_hash " + vp_hash)
+            policy_id = v_query.getParameter("verifiable_presentation").split("@")[1].toString()
+            //gs.addInfoMessage("policy_id " + policy_id)
+        }
+
+        if (v_query.isGet()) {
+			token_id = v_query.getSysId().split("@")[0].toString() 
+            vp_hash = v_query.getSysId().split("@")[1].toString()
+            policy_id = v_query.getSysId().split("@")[2].toString()
+        }
+
+        var sm = new sn_ws.RESTMessageV2();
+        sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/tag/trustChainBlock")
+        sm.setHttpMethod("get")
+        sm.setRequestHeader("authorization", "bearer " + jwt)
+        var response = sm.execute()
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        var body = JSON.parse(responseBody)
+        var trustChainBlock_uuid = body.id
+        //gs.addInfoMessage("trustChainBlock_uuid " + trustChainBlock_uuid)
+
+        var sm2 = new sn_ws.RESTMessageV2();
+        sm2.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+        sm2.setHttpMethod("post")
+        sm2.setRequestHeader("authorization", "bearer " + jwt)
+        sm2.setRequestHeader("content-type", "application/json")
+        sm2.setRequestBody('{ "filterValue": "' + vp_hash + '" }')
+        //gs.addInfoMessage('{ "filterValue": "' + vp_hash + '" }')
+        var response2 = sm2.execute()
+        var responseBody2 = response2.getBody();
+        var httpStatus2 = response2.getStatusCode();
+        //gs.addInfoMessage("responseBody2 " + responseBody2)
+
+        var sm3 = new sn_ws.RESTMessageV2();
+        sm3.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+        sm3.setHttpMethod("get")
+        sm3.setRequestHeader("authorization", "bearer " + jwt)
+        var response3 = sm3.execute()
+        var responseBody3 = response3.getBody();
+        //gs.addInfoMessage("responseBody3 " + responseBody3)
+        var httpStatus3 = response3.getStatusCode();
+
+        var data = JSON.parse(responseBody3).data.mintDocument
+		//gs.addInfoMessage(JSON.stringify(data))
+		
+        var row = {}
+
+        //        if (data[i].id == device_id || device_id == undefined || device_id == null) {
+
+        row.token_id = data.tokenId
+		row.amount = data.document.document.credentialSubject[0].amount
+		row.issuer = data.document.document.issuer
+		row.issuance_date = data.document.document.credentialSubject[0].date
+        row.sys_id = data.tokenId + "@" + vp_hash + "@" + policy_id
+        row.verifiable_presentation = vp_hash + "@" + policy_id
+
+        /* row.id = data[i].id
+            row.owner = data[i].owner
+            row.hash = data[i].hash
+            row.document = JSON.stringify(data[i].document)
+		    row.policy = policy_id
+            row.topic_id = data[i].topicId
+            row.message_id = data[i].messageId
+            row.schema = data[i].schema
+            row.tag = data[i].tag
+            row.policy_id = data[i].policyId
+            row.hedera_status = data[i].hederaStatus
+            row.type = data[i].type
+            row.status = (data[i].option ? data[i].option.status : null)
+            row.json = JSON.stringify(data[i]) 
+            row.sys_id = data[i].hash */
+
+        v_table.addRow(row)
+    } catch (e) {
+        gs.addErrorMessage(JSON.stringify(e))
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-03 15:38:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ef6e995a1b0d9d10bed02063b24bcb66</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Mint Document</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_ef6e995a1b0d9d10bed02063b24bcb66</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 09:54:32</sys_updated_on>
+        <table>x_snc_guardian_st_mint_document</table>
+    </sys_script_vtable>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_script_vtable_ef6e995a1b0d9d10bed02063b24bcb66</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_vtable"&gt;&lt;sys_script_vtable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;cache_isolation_level&gt;USER&lt;/cache_isolation_level&gt;&lt;cache_strategy&gt;CACHE_BY_QUERY&lt;/cache_strategy&gt;&lt;cache_ttl&gt;0&lt;/cache_ttl&gt;&lt;name&gt;Mint Document&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function executeQuery(v_table, v_query) {
+
+    try {
+        var u = new GlideRecord("x_snc_guardian_login")
+        u.get("user", gs.getUserID())
+        var jwt = u.jwt
+
+        var vp_hash, policy_id, token_id
+        if (v_query.getParameter("verifiable_presentation")) {
+            vp_hash = v_query.getParameter("verifiable_presentation").split("@")[0].toString()
+            //gs.addInfoMessage("vp_hash " + vp_hash)
+            policy_id = v_query.getParameter("verifiable_presentation").split("@")[1].toString()
+            //gs.addInfoMessage("policy_id " + policy_id)
+        }
+
+        if (v_query.isGet()) {
+			token_id = v_query.getSysId().split("@")[0].toString() 
+            vp_hash = v_query.getSysId().split("@")[1].toString()
+            policy_id = v_query.getSysId().split("@")[2].toString()
+        }
+
+        var sm = new sn_ws.RESTMessageV2();
+        sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/tag/trustChainBlock")
+        sm.setHttpMethod("get")
+        sm.setRequestHeader("authorization", "bearer " + jwt)
+        var response = sm.execute()
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        var body = JSON.parse(responseBody)
+        var trustChainBlock_uuid = body.id
+        //gs.addInfoMessage("trustChainBlock_uuid " + trustChainBlock_uuid)
+
+        var sm2 = new sn_ws.RESTMessageV2();
+        sm2.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+        sm2.setHttpMethod("post")
+        sm2.setRequestHeader("authorization", "bearer " + jwt)
+        sm2.setRequestHeader("content-type", "application/json")
+        sm2.setRequestBody('{ "filterValue": "' + vp_hash + '" }')
+        //gs.addInfoMessage('{ "filterValue": "' + vp_hash + '" }')
+        var response2 = sm2.execute()
+        var responseBody2 = response2.getBody();
+        var httpStatus2 = response2.getStatusCode();
+        //gs.addInfoMessage("responseBody2 " + responseBody2)
+
+        var sm3 = new sn_ws.RESTMessageV2();
+        sm3.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+        sm3.setHttpMethod("get")
+        sm3.setRequestHeader("authorization", "bearer " + jwt)
+        var response3 = sm3.execute()
+        var responseBody3 = response3.getBody();
+        //gs.addInfoMessage("responseBody3 " + responseBody3)
+        var httpStatus3 = response3.getStatusCode();
+
+        var data = JSON.parse(responseBody3).data.mintDocument
+		//gs.addInfoMessage(JSON.stringify(data))
+		
+        var row = {}
+
+        //        if (data[i].id == device_id || device_id == undefined || device_id == null) {
+
+        row.token_id = data.tokenId
+		row.amount = data.document.document.credentialSubject[0].amount
+		row.issuer = data.document.document.issuer
+		row.issuance_date = data.document.document.credentialSubject[0].date
+        row.sys_id = data.tokenId + "@" + vp_hash + "@" + policy_id
+        row.verifiable_presentation = vp_hash + "@" + policy_id
+
+        /* row.id = data[i].id
+            row.owner = data[i].owner
+            row.hash = data[i].hash
+            row.document = JSON.stringify(data[i].document)
+		    row.policy = policy_id
+            row.topic_id = data[i].topicId
+            row.message_id = data[i].messageId
+            row.schema = data[i].schema
+            row.tag = data[i].tag
+            row.policy_id = data[i].policyId
+            row.hedera_status = data[i].hederaStatus
+            row.type = data[i].type
+            row.status = (data[i].option ? data[i].option.status : null)
+            row.json = JSON.stringify(data[i]) 
+            row.sys_id = data[i].hash */
+
+        v_table.addRow(row)
+    } catch (e) {
+        gs.addErrorMessage(JSON.stringify(e))
+    }
+
+})(v_table, v_query);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_vtable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-03 15:38:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ef6e995a1b0d9d10bed02063b24bcb66&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;Mint Document&lt;/sys_name&gt;&lt;sys_package display_value="guardian" source="x_snc_guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_vtable_ef6e995a1b0d9d10bed02063b24bcb66&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-04 09:54:32&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_guardian_st_mint_document&lt;/table&gt;&lt;/sys_script_vtable&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-742980258</payload_hash>
+        <record_name>Mint Document</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 09:54:32</sys_created_on>
+        <sys_id>f8e95d2a1b89dd10bed02063b24bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182684732020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 09:54:32</sys_updated_on>
+        <type>Remote Table</type>
+        <update_guid>f0e95d2aa889dd10210e5eaa8d010a7e</update_guid>
+        <update_guid_history>f0e95d2aa889dd10210e5eaa8d010a7e:-742980258,ef39912aa689dd10c49a4d17ba18bf65:-1472625083,f1e8dde64b89dd1088f387668d8345a7:-2003584064,18b659666689dd10d83cb716c0320ff7:-1208079928,008695668889dd102a128d9c48f392e8:355583964,456559e20989dd10d219aae95f6b3ff7:-235321852,0aa419e22689dd10d2503b24c4811ebc:-497503807,3694d5e2de89dd104bd4bcec79f5dc49:1720541728,a07415e2fb89dd10889de372b0eabe46:1146131630,d05491e28689dd1056cdc470949153b6:-1141040715,deb319a2f389dd1021e9125f8cde53ec:-1174004870,74c970ea8909dd1050c2945b4352eb6b:-397809674,8724a1de8c0d9d100568cc865b8315e9:-1563983472,3a0461de910d9d10a42bce5f6455c528:-87892429,c9e3299e7b0d9d10f2df261cbde21fd0:-1192879117,a773e19ec40d9d10bea234c0f104129e:1749166028,e523619e720d9d1020423050f65f7dca:642755381,2603619e930d9d10a435899a001216c3:1445507189,24e26d5e8c0d9d10d88ec914e6a7be50:315853845,a9b2695ea10d9d10c259dccb45016490:1953802389,3972695e090d9d10e649eb5c906e3f33:168690613,2962a55e0f0d9d10a820c92e83a06b1c:494349909,bf32e15e760d9d1034310e7f31cb97c7:-1966689734,d0c1251e8a0d9d10cc7930cccd8f330e:1322179098,1b31251e5f0d9d10bf1a9380d0514c60:-281207395,d501251e960d9d10d53e56301e154507:-486256245,7a90a5dabb0d9d10d1928e2d8fed6200:210385800,500021da490d9d10befdd526d693b0a2:-1222300321,087f199a0e0d9d10efb8e9dcf94dbcc3:1793466322,db2f955a6f0d9d109c39e43d80ff6bc8:2114785067,210f119a190d9d10f92b19e4a9fd9e3a:-1275149984</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 14:00:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_vtable">sys_script_vtable</sys_db_object>
+        <sys_id>0dc6ea87a06648468135c88fbb480581</sys_id>
+        <sys_metadata>ef6e995a1b0d9d10bed02063b24bcb66</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mint Document</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_script_vtable_ef6e995a1b0d9d10bed02063b24bcb66</sys_update_name>
+        <sys_update_version display_value="sys_script_vtable_ef6e995a1b0d9d10bed02063b24bcb66">f8e95d2a1b89dd10bed02063b24bcb7e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 14:00:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

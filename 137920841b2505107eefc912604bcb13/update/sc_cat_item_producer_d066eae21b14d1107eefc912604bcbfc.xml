@@ -72,23 +72,24 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script><![CDATA[(function() {
-	
-	try {
-		var inputs = {};
-		inputs['policy_id'] = producer.policy_id; // String 
-		inputs['role'] = producer.role; // String 
+        <script><![CDATA[try {
+    var inputs = {};
+    inputs['policy_id'] = producer.policy_id; // String 
+    inputs['role'] = producer.role; // String 
 
-		var result = sn_fd.FlowAPI.getRunner().action('x_snc_guardian.choose_role').inForeground().withInputs(inputs).run();
-		var outputs = result.getOutputs();
+    var result = sn_fd.FlowAPI.getRunner().action('x_snc_guardian.choose_role').inForeground().withInputs(inputs).run();
+    var outputs = result.getOutputs();
 
-		// Current action has no outputs defined.		
-	} catch (ex) {
-		var message = ex.getMessage();
-		gs.error(message);
-	}
+    // Current action has no outputs defined.
+
+	var policy = new GlideRecord("x_snc_guardian_st_policy")
+	policy.get(policy_id)
 	
-})();]]></script>
+    action.setRedirectURL(policy)
+} catch (ex) {
+    var message = ex.getMessage();
+    gs.error(message);
+}]]></script>
         <short_description>Choose role</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -97,14 +98,14 @@
         <sys_created_by>nicola</sys_created_by>
         <sys_created_on>2022-06-28 08:42:27</sys_created_on>
         <sys_id>d066eae21b14d1107eefc912604bcbfc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Choose role</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sc_cat_item_producer_d066eae21b14d1107eefc912604bcbfc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 08:59:22</sys_updated_on>
+        <sys_updated_on>2022-08-05 13:27:32</sys_updated_on>
         <table_name>x_snc_guardian_req</table_name>
         <taxonomy_topic/>
         <template/>

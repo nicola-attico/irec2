@@ -4,7 +4,7 @@
         <element label="Frozen" max_length="40" name="frozen" type="boolean"/>
         <element label="Kyc" max_length="40" name="kyc" type="boolean"/>
         <element label="Token" max_length="32" name="token" reference="x_snc_guardian_st_token" type="reference"/>
-        <element label="User" max_length="255" name="user" reference="x_snc_guardian_st_user" reference_key="username" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="x_snc_guardian_login" type="reference"/>
         <index name="index">
             <element name="user"/>
         </index>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Document</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+    var u = new GlideRecord("x_snc_guardian_login")
+    u.get("user", gs.getUserID())
+    var jwt = u.jwt
+
+    var vp_hash, policy_id, tag
+    if (v_query.getParameter("verifiable_presentation")) {
+        vp_hash = v_query.getParameter("verifiable_presentation").split("@")[0].toString()
+        //gs.addInfoMessage("vp_hash " + vp_hash)
+        policy_id = v_query.getParameter("verifiable_presentation").split("@")[1].toString()
+        //gs.addInfoMessage("policy_id " + policy_id)
+    }
+
+    if (v_query.isGet()) {
+        tag = v_query.getSysId().split("@")[0].toString()
+        vp_hash = v_query.getSysId().split("@")[1].toString()
+        policy_id = v_query.getSysId().split("@")[2].toString()
+    }
+
+    var sm = new sn_ws.RESTMessageV2();
+    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/tag/trustChainBlock")
+    sm.setHttpMethod("get")
+    sm.setRequestHeader("authorization", "bearer " + jwt)
+    var response = sm.execute()
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+    var body = JSON.parse(responseBody)
+    var trustChainBlock_uuid = body.id
+    //gs.addInfoMessage("trustChainBlock_uuid " + trustChainBlock_uuid)
+
+    var sm2 = new sn_ws.RESTMessageV2();
+    sm2.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+    sm2.setHttpMethod("post")
+    sm2.setRequestHeader("authorization", "bearer " + jwt)
+    sm2.setRequestHeader("content-type", "application/json")
+    sm2.setRequestBody('{ "filterValue": "' + vp_hash + '" }')
+    //gs.addInfoMessage('{ "filterValue": "' + vp_hash + '" }')
+    var response2 = sm2.execute()
+    var responseBody2 = response2.getBody();
+    var httpStatus2 = response2.getStatusCode();
+    //gs.addInfoMessage("responseBody2 " + responseBody2)
+
+    var sm3 = new sn_ws.RESTMessageV2();
+    sm3.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + trustChainBlock_uuid)
+    sm3.setHttpMethod("get")
+    sm3.setRequestHeader("authorization", "bearer " + jwt)
+    var response3 = sm3.execute()
+    var responseBody3 = response3.getBody();
+    //gs.addInfoMessage("responseBody3 " + responseBody3)
+    var httpStatus3 = response3.getStatusCode();
+
+    var data = JSON.parse(responseBody3).data
+	//gs.addInfoMessage(JSON.stringify(data))
+
+    var docs = []
+    for (i = 0; i < data.documents.length; i++) {
+        docs.push(data.documents[i])
+    }
+	docs.push(data.mintDocument)
+    docs.push(data.policyDocument)
+    docs.push(data.policyCreatorDocument)
+
+
+//    gs.addInfoMessage(docs.length)
+
+    for (i = 0; i < docs.length; i++) {
+        var row = {}
+
+        if (docs[i].tag == tag || tag == undefined || tag == null) {
+
+            row.sys_id = docs[i].tag + "@" + vp_hash + "@" + policy_id
+            row.verifiable_presentation = vp_hash + "@" + policy_id
+            row.hash = docs[i].document.hash
+            row.title = docs[i].title
+            row.description = docs[i].description
+            row.username = docs[i].username
+			row.tag = docs[i].tag
+			row.type = docs[i].type
+			row.issuer = docs[i].issuer			
+			row.json = JSON.stringify(docs[i])
+			
+			//vc
+			row.id = docs[i].document.document.id
+			
+			
+			
+            /*		row.id = data[i].id
+                    row.owner = data[i].owner
+                    row.hash = data[i].hash
+                    row.document = JSON.stringify(data[i].document)
+                    row.policy = policy_id
+                    row.topic_id = data[i].topicId
+                    row.message_id = data[i].messageId
+                    row.schema = data[i].schema
+                    row.tag = data[i].tag
+                    row.policy_id = data[i].policyId
+                    row.hedera_status = data[i].hederaStatus
+                    row.type = data[i].type
+                    row.status = (data[i].option ? data[i].option.status : null)
+                    row.json = JSON.stringify(data[i]) */
+
+
+            v_table.addRow(row)
+        }
+
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-03 12:40:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e44fc921b899d10bed02063b24bcba8</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>Document</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_6e44fc921b899d10bed02063b24bcba8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 15:51:33</sys_updated_on>
+        <table>x_snc_guardian_st_document</table>
+    </sys_script_vtable>
+</record_update>

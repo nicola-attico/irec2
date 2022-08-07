@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Issuance" language="en" table="x_snc_guardian_st_issuance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Issuance</label>
+            <language>en</language>
+            <name>x_snc_guardian_st_issuance</name>
+            <plural>Issuances</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-20 10:42:10</sys_created_on>
+            <sys_id>1cf49c391bf89d507eefc912604bcb42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Issuance</sys_name>
+            <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_guardian_st_issuance__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-20 10:42:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

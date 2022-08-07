@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Block</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+	var policy = JSON.parse(current.config)
+	
+//   if (v_query.getParameter("policy")) {
+//        policy = v_query.getParameter("policy")
+//    }	
+	
+	
+  })(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:42:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd4bbab21b8d1150bed02063b24bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Block</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:42:14</sys_updated_on>
+        <table>x_snc_guardian_st_block</table>
+    </sys_script_vtable>
+</record_update>

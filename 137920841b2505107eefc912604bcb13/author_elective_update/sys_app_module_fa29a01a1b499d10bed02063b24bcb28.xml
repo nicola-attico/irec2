@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Verifiable Presentations</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_guardian_st_verifiable_presentation</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_guardian.verifiable_presentation_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-03 11:43:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa29a01a1b499d10bed02063b24bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verifiable Presentations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_app_module_fa29a01a1b499d10bed02063b24bcb28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-03 11:43:12</sys_updated_on>
+        <timeline_page/>
+        <title>Verifiable Presentations</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_app_module_fa29a01a1b499d10bed02063b24bcb28</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Verifiable Presentations</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_guardian_st_verifiable_presentation</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_snc_guardian.verifiable_presentation_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-03 11:43:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa29a01a1b499d10bed02063b24bcb28</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Verifiable Presentations</sys_name><sys_overrides/><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_app_module_fa29a01a1b499d10bed02063b24bcb28</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-03 11:43:12</sys_updated_on><timeline_page/><title>Verifiable Presentations</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1095040677</payload_hash>
+        <record_name>Verifiable Presentations</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-03 11:43:13</sys_created_on>
+        <sys_id>7e29a01a1b499d10bed02063b24bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1826384547f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-03 11:43:13</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b629a01a15499d102f92bf16fa30702b</update_guid>
+        <update_guid_history>b629a01a15499d102f92bf16fa30702b:-1095040677</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Verifiable Presentations">de297a321b8d1150bed02063b24bcb6a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:29:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>927bbe77020e4d03a9791390751cb5a1</sys_id>
+        <sys_metadata>fa29a01a1b499d10bed02063b24bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verifiable Presentations</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_app_module_fa29a01a1b499d10bed02063b24bcb28</sys_update_name>
+        <sys_update_version display_value="sys_app_module_fa29a01a1b499d10bed02063b24bcb28">7e29a01a1b499d10bed02063b24bcb2b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:29:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

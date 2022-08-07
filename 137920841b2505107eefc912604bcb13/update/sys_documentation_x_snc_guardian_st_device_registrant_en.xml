@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="registrant" label="Registrant" language="en" table="x_snc_guardian_st_device">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>registrant</element>
+            <help/>
+            <hint/>
+            <label>Registrant</label>
+            <language>en</language>
+            <name>x_snc_guardian_st_device</name>
+            <plural>Registrants</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-01 16:27:16</sys_created_on>
+            <sys_id>88075fad1b0d5d107eefc912604bcbaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Registrant</sys_name>
+            <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_guardian_st_device_registrant_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-01 16:27:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

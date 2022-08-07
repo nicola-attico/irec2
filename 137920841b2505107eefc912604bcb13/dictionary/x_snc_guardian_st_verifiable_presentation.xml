@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Verifiable Presentation" max_length="40" name="x_snc_guardian_st_verifiable_presentation" sizeclass="0" type="collection">
+        <element label="Document" max_length="100000" name="document" type="string"/>
+        <element label="Hash" max_length="100" name="hash" type="string"/>
+        <element label="Id" max_length="100" name="id" type="string"/>
+        <element label="Owner" max_length="200" name="owner" type="string"/>
+        <element label="Policy" max_length="32" name="policy" reference="x_snc_guardian_st_policy" type="reference"/>
+        <element label="Properties" max_length="4000" name="properties" type="simple_name_values"/>
+        <index name="index">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

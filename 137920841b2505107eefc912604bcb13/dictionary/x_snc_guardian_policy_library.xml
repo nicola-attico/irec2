@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Policy Library" max_length="40" name="x_snc_guardian_policy_library" sizeclass="1" type="collection">
+        <element label="Message Id" max_length="100" name="message_id" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

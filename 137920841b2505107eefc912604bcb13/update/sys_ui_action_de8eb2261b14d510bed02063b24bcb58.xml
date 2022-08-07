@@ -31,7 +31,7 @@
         <onclick>createDevice()</onclick>
         <order>100</order>
         <script><![CDATA[function createDevice() {
-	location.href = "com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=135dfea21b14d510bed02063b24bcb79&sysparm_policy=" + g_form.getUniqueValue()
+	location.href = "com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=135dfea21b14d510bed02063b24bcb79&sysparm_registrant=" + g_form.getUniqueValue()
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>de8eb2261b14d510bed02063b24bcb58</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Create device</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
@@ -51,8 +51,8 @@
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_ui_action_de8eb2261b14d510bed02063b24bcb58</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-28 10:33:34</sys_updated_on>
-        <table>x_snc_guardian_st_policy</table>
+        <sys_updated_on>2022-08-01 14:27:58</sys_updated_on>
+        <table>x_snc_guardian_st_registrant</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

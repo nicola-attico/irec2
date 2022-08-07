@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="title" label="Title" language="en" table="x_snc_guardian_st_document">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <help/>
+            <hint/>
+            <label>Title</label>
+            <language>en</language>
+            <name>x_snc_guardian_st_document</name>
+            <plural>Titles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-04 10:19:38</sys_created_on>
+            <sys_id>e8af91ae1b89dd10bed02063b24bcb5f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Title</sys_name>
+            <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_guardian_st_document_title_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-04 10:19:38</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

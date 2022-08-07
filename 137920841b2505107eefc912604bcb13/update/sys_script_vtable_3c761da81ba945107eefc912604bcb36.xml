@@ -29,6 +29,7 @@
 
         row.sys_id = body[i].id
 		row.config = JSON.stringify(body[i].config)
+		row.json = JSON.stringify(body[i])
         row.creator = body[i].creator
         row.description = body[i].description
         row.id = body[i].id
@@ -39,6 +40,7 @@
         row.policy_tag = body[i].policyTag
         row.status = body[i].status
         row.topic_id = body[i].topicId
+		row.instance_topic_id = body[i].instanceTopicId 
         row.version = body[i].version
 
         v_table.addRow(row)
@@ -50,14 +52,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3c761da81ba945107eefc912604bcb36</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Policy</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_3c761da81ba945107eefc912604bcb36</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-21 11:44:19</sys_updated_on>
+        <sys_updated_on>2022-08-05 14:08:27</sys_updated_on>
         <table>x_snc_guardian_st_policy</table>
     </sys_script_vtable>
 </record_update>

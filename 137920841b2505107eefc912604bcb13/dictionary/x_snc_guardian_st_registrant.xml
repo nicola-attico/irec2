@@ -7,6 +7,7 @@
         </element>
         <element label="Id" max_length="20" name="id" type="string"/>
         <element label="Json" max_length="100000" name="json" type="string_full_utf8"/>
+        <element label="Legal Name" max_length="100" name="legal_name" type="string"/>
         <element label="Message Id" max_length="50" name="message_id" type="string"/>
         <element label="Owner" max_length="200" name="owner" type="string"/>
         <element label="Policy Id" max_length="50" name="policy_id" reference="x_snc_guardian_st_policy" type="reference"/>

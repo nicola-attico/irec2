@@ -1765,7 +1765,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Choose role">03b7a2ee1b90d510bed02063b24bcb59</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"58696e221bd0d510bed02063b24bcb94","name":"plan","plan_signature":null}}</plan>
-        <snapshot>ec9eee661bd0d510bed02063b24bcb89</snapshot>
+        <snapshot>a8aa222d1b495d107eefc912604bcb14</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 08:54:45</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -3540,6 +3540,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>03b7a2ee1b90d510bed02063b24bcb59</sys_id>
         <latest_snapshot>4f59ea221bd0d510bed02063b24bcbec</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch4-hotfix1-06-10-2022_06-12-2022_2316.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

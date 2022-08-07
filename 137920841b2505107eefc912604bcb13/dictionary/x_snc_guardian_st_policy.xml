@@ -4,6 +4,8 @@
         <element label="Creator" max_length="100" name="creator" type="string"/>
         <element label="Description" max_length="100" name="description" type="string_full_utf8"/>
         <element label="Id" max_length="50" name="id" type="string"/>
+        <element label="Instance Topic Id" max_length="50" name="instance_topic_id" type="string"/>
+        <element label="Json" max_length="100000" name="json" type="string"/>
         <element label="Message Id" max_length="20" name="message_id" type="string"/>
         <element label="Name" max_length="100" name="name" type="string_full_utf8"/>
         <element label="Owner" max_length="100" name="owner" type="string"/>

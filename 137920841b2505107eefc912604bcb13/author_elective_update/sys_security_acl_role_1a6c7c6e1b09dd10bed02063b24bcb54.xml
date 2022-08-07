@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 07:45:45</sys_created_on>
+        <sys_id>1a6c7c6e1b09dd10bed02063b24bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian_st_policy_creator_document.x_snc_guardian.policy_creator_document_user</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_security_acl display_value="x_snc_guardian_st_policy_creator_document">126c7c6e1b09dd10bed02063b24bcb52</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1a6c7c6e1b09dd10bed02063b24bcb54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 07:45:45</sys_updated_on>
+        <sys_user_role display_value="x_snc_guardian.policy_creator_document_user" name="x_snc_guardian.policy_creator_document_user">8e6c386e1b09dd10bed02063b24bcb16</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_security_acl_role_1a6c7c6e1b09dd10bed02063b24bcb54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-04 07:45:45</sys_created_on><sys_id>1a6c7c6e1b09dd10bed02063b24bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_guardian_st_policy_creator_document.x_snc_guardian.policy_creator_document_user</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_security_acl display_value="x_snc_guardian_st_policy_creator_document">126c7c6e1b09dd10bed02063b24bcb52</sys_security_acl><sys_update_name>sys_security_acl_role_1a6c7c6e1b09dd10bed02063b24bcb54</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-04 07:45:45</sys_updated_on><sys_user_role display_value="x_snc_guardian.policy_creator_document_user" name="x_snc_guardian.policy_creator_document_user">8e6c386e1b09dd10bed02063b24bcb16</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>214634747</payload_hash>
+        <record_name>x_snc_guardian_st_policy_creator_document.x_snc_guardian.policy_creator_document_user</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 07:45:45</sys_created_on>
+        <sys_id>9a6c7c6e1b09dd10bed02063b24bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18267d14a300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 07:45:45</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d26c7c6e5709dd104e8610504dafdd56</update_guid>
+        <update_guid_history>d26c7c6e5709dd104e8610504dafdd56:214634747</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_guardian_st_policy_creator_document.x_snc_guardian.policy_creator_document">6b32d66e1b4ddd10bed02063b24bcb5d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 14:00:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>34701757ddd044a2b8fc068320517584</sys_id>
+        <sys_metadata>1a6c7c6e1b09dd10bed02063b24bcb54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian_st_policy_creator_document.x_snc_guardian.policy_creator_document_user</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent display_value="">126c7c6e1b09dd10bed02063b24bcb52</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_1a6c7c6e1b09dd10bed02063b24bcb54</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_1a6c7c6e1b09dd10bed02063b24bcb54">9a6c7c6e1b09dd10bed02063b24bcb56</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 14:00:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

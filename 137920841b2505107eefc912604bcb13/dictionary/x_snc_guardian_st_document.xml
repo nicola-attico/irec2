@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Document" max_length="40" name="x_snc_guardian_st_document" sizeclass="0" type="collection">
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element label="Hash" max_length="50" name="hash" type="string"/>
+        <element label="Id" max_length="50" name="id" type="string"/>
+        <element label="Issuance Date" max_length="40" name="issuance_date" type="glide_date"/>
+        <element label="Issuer" max_length="200" name="issuer" type="string"/>
+        <element label="Json" max_length="10000" name="json" type="string"/>
+        <element label="Tag" max_length="50" name="tag" type="string"/>
+        <element label="Title" max_length="200" name="title" type="string"/>
+        <element label="Type" max_length="100" name="type" type="string"/>
+        <element label="Username" max_length="200" name="username" type="string"/>
+        <element label="Verifiable Presentation" max_length="200" name="verifiable_presentation" reference="x_snc_guardian_st_verifiable_presentation" reference_key="sys_id" type="reference"/>
+        <index name="index">
+            <element name="verifiable_presentation"/>
+        </index>
+    </element>
+</database>
