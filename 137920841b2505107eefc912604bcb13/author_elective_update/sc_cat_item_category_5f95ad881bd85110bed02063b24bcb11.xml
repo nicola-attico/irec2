@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Create Guardian User RP">07a2ceb21bc01d10bed02063b24bcbbc</sc_cat_item>
+        <sc_category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 09:33:52</sys_created_on>
+        <sys_id>5f95ad881bd85110bed02063b24bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian.Create Guardian User RP</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_category_5f95ad881bd85110bed02063b24bcb11</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 09:33:52</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sc_cat_item_category_5f95ad881bd85110bed02063b24bcb11</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create Guardian User RP">07a2ceb21bc01d10bed02063b24bcbbc</sc_cat_item><sc_category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-20 09:33:52</sys_created_on><sys_id>5f95ad881bd85110bed02063b24bcb11</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Guardian.Create Guardian User RP</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sc_cat_item_category_5f95ad881bd85110bed02063b24bcb11</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-20 09:33:52</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>625231113</payload_hash>
+        <record_name>Guardian.Create Guardian User RP</record_name>
+        <reverted_from/>
+        <source>5379a0841b2505107eefc912604bcb83</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 09:33:52</sys_created_on>
+        <sys_id>d395ad881bd85110bed02063b24bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18180761b910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 09:33:52</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>1f95ad8806d8511087ac2d1d61a3df84</update_guid>
+        <update_guid_history>1f95ad8806d8511087ac2d1d61a3df84:625231113</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Guardian.Create Guardian User RP">b23929391b35d150bed02063b24bcb0c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 09:53:14</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>934cd35b1f944930a1d4c04adb655cd1</sys_id>
+        <sys_metadata>5f95ad881bd85110bed02063b24bcb11</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian.Create Guardian User RP</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_5f95ad881bd85110bed02063b24bcb11</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_5f95ad881bd85110bed02063b24bcb11">d395ad881bd85110bed02063b24bcb85</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 09:53:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

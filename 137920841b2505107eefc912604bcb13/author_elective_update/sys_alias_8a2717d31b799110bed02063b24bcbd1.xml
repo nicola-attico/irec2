@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_guardian.ServiceNow_Dev</id>
+        <multiple_connections>false</multiple_connections>
+        <name>ServiceNow Dev</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 09:44:45</sys_created_on>
+        <sys_id>8a2717d31b799110bed02063b24bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian.ServiceNow_Dev</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_alias_8a2717d31b799110bed02063b24bcbd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 09:44:45</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_alias_8a2717d31b799110bed02063b24bcbd1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_snc_guardian.ServiceNow_Dev</id><multiple_connections>false</multiple_connections><name>ServiceNow Dev</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 09:44:45</sys_created_on><sys_id>8a2717d31b799110bed02063b24bcbd1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_guardian.ServiceNow_Dev</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_alias_8a2717d31b799110bed02063b24bcbd1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 09:44:45</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>80559221</payload_hash>
+        <record_name>x_snc_guardian.ServiceNow_Dev</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 09:44:45</sys_created_on>
+        <sys_id>5b3797d31b799110bed02063b24bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183363c9e030000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 09:44:45</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>533797d392799110fea0c37d719cb62a</update_guid>
+        <update_guid_history>533797d392799110fea0c37d719cb62a:80559221</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 09:52:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>211db8d5cfdb4d168abae7ddfe3eb829</sys_id>
+        <sys_metadata>8a2717d31b799110bed02063b24bcbd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian.ServiceNow_Dev</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_alias_8a2717d31b799110bed02063b24bcbd1</sys_update_name>
+        <sys_update_version display_value="sys_alias_8a2717d31b799110bed02063b24bcbd1">5b3797d31b799110bed02063b24bcb2a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 09:52:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

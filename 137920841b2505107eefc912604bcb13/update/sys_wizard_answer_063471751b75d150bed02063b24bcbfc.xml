@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Onboarding</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Onboarding</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">136ae17a45113010c0a05206e0e0f8ec</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 10:41:14</sys_created_on>
+        <sys_id>063471751b75d150bed02063b24bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_wizard_answer_063471751b75d150bed02063b24bcbfc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 10:41:14</sys_updated_on>
+        <table/>
+        <target_url>x_snc_guardian_onboarding.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

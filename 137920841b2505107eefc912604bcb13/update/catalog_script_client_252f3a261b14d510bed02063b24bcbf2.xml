@@ -23,12 +23,14 @@
     var registrant_id = g.getParam("sysparm_registrant").split("@")[0].toString()
     var policy_id = g.getParam("sysparm_registrant").split("@")[1].toString()
 
-    if (registrant_id) {
-        g_form.setValue('registrant_id', registrant_id);
-    }
-
     if (policy_id) {
         g_form.setValue('policy_id', policy_id);
+        g_form.setValue('policy', policy_id);
+    }
+	
+    if (registrant_id) {
+        g_form.setValue('registrant_id', registrant_id);
+        g_form.setValue('registrant', registrant_id + "@" + policy_id);
     }
 
 }]]></script>
@@ -38,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>252f3a261b14d510bed02063b24bcbf2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Populate vars in create_device</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
@@ -46,7 +48,7 @@
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>catalog_script_client_252f3a261b14d510bed02063b24bcbf2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-01 15:42:45</sys_updated_on>
+        <sys_updated_on>2022-09-09 16:40:03</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>0</ui_type>

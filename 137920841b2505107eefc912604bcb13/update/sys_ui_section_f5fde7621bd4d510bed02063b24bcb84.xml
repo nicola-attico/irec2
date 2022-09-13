@@ -1,172 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="f5fde7621bd4d510bed02063b24bcb84" sys_domain="global" table="x_snc_guardian_st_device" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>policy_id</element>
+            <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>76cf88f11bf89d507eefc912604bcbd4</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>eb2926831b395110bed02063b24bcbfd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>id</element>
+            <element>device_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>f6cf88f11bf89d507eefc912604bcbd4</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>6f2926831b395110bed02063b24bcbfd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>owner</element>
+            <element>latitude</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>7acf88f11bf89d507eefc912604bcbd4</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>ef2926831b395110bed02063b24bcbfd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>hash</element>
+            <element>longitude</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>facf88f11bf89d507eefc912604bcbd4</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>632926831b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>e32926831b395110bed02063b24bcbfe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>7ecf88f11bf89d507eefc912604bcbd4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>topic_id</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>fecf88f11bf89d507eefc912604bcbd4</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>672926831b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>message_id</element>
+            <element>capacity</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>72cf88f11bf89d507eefc912604bcbd5</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>e72926831b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>schema</element>
+            <element>units</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>f2cf88f11bf89d507eefc912604bcbd5</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>6b2926831b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>tag</element>
+            <element>.end_split</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>76cf88f11bf89d507eefc912604bcbd5</sys_id>
+            <sys_created_on>2022-09-12 11:45:02</sys_created_on>
+            <sys_id>eb2926831b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:45:02</sys_updated_on>
             <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>hedera_status</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>3acfc8f11bf89d507eefc912604bcbf3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>type</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-07-20 10:19:41</sys_created_on>
-            <sys_id>bacfc8f11bf89d507eefc912604bcbf3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-07-20 10:19:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>registrant</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-01 16:27:15</sys_created_on>
-            <sys_id>84075fad1b0d5d107eefc912604bcba7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_device" sys_domain="global" view="Default view">f5fde7621bd4d510bed02063b24bcb84</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-01 16:27:15</sys_updated_on>
-            <sys_user/>
-            <type/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

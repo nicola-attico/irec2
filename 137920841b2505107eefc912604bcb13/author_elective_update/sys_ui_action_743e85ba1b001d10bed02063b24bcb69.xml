@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>sysverb_root</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>RP.isRelatedList() == false</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Registry</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[try {
+    var inputs = {};
+
+    var username = Math.random().toString(36).substring(2, 10)
+    var password = 'test'
+
+    inputs['username'] = username; // String 
+    inputs['password'] = password; // String 
+
+    var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_guardian.configure_root_authority').inForeground().withInputs(inputs).run();
+    var outputs = result.getOutputs();
+
+    var access_token = outputs['access_token']; // String
+    var account_id = outputs['account_id']; // String
+    var key = outputs['key']; // String
+    var topic_id = outputs['topic_id']; // String
+    var did = outputs['did']; // String
+    var confirmed = outputs['confirmed']; // True/False
+    var failed = outputs['failed']; // True/False
+
+    var login = new GlideRecord("x_snc_guardian_login")
+    login.initialize()
+
+    login.username = username
+    login.password = password
+	login.did = did
+    login.account_id = account_id
+    login.jwt = access_token
+    login.is_root_authority = true
+    login.user = gs.getUserID()
+	login.topic_id = topic_id
+    login.confirmed = confirmed
+    login.failed = failed
+
+    login.insert()
+    action.setRedirectURL(login)
+
+
+} catch (ex) {
+    var message = ex.getMessage();
+    gs.error(message);
+    gs.addErrorMessage(JSON.stringify(ex))
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 10:49:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>743e85ba1b001d10bed02063b24bcb69</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Create Registry</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_ui_action_743e85ba1b001d10bed02063b24bcb69</sys_update_name>
+        <sys_updated_by>nicola</sys_updated_by>
+        <sys_updated_on>2022-09-07 17:08:01</sys_updated_on>
+        <table>x_snc_guardian_login</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_ui_action_743e85ba1b001d10bed02063b24bcb69</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_root&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;RP.isRelatedList() == false&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;true&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Create Registry&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[try {
+    var inputs = {};
+
+    var username = Math.random().toString(36).substring(2, 10)
+    var password = 'test'
+
+    inputs['username'] = username; // String 
+    inputs['password'] = password; // String 
+
+    var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_guardian.configure_root_authority').inForeground().withInputs(inputs).run();
+    var outputs = result.getOutputs();
+
+    var access_token = outputs['access_token']; // String
+    var account_id = outputs['account_id']; // String
+    var key = outputs['key']; // String
+    var topic_id = outputs['topic_id']; // String
+    var did = outputs['did']; // String
+    var confirmed = outputs['confirmed']; // True/False
+    var failed = outputs['failed']; // True/False
+
+    var login = new GlideRecord("x_snc_guardian_login")
+    login.initialize()
+
+    login.username = username
+    login.password = password
+	login.did = did
+    login.account_id = account_id
+    login.jwt = access_token
+    login.is_root_authority = true
+    login.user = gs.getUserID()
+	login.topic_id = topic_id
+    login.confirmed = confirmed
+    login.failed = failed
+
+    login.insert()
+    action.setRedirectURL(login)
+
+
+} catch (ex) {
+    var message = ex.getMessage();
+    gs.error(message);
+    gs.addErrorMessage(JSON.stringify(ex))
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-16 10:49:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;743e85ba1b001d10bed02063b24bcb69&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Registry&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="guardian" source="x_snc_guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_743e85ba1b001d10bed02063b24bcb69&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicola&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-07 17:08:01&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_guardian_login&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1869819722</payload_hash>
+        <record_name>Create Registry</record_name>
+        <reverted_from/>
+        <source>5fa841291b7115507eefc912604bcb9b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nicola</sys_created_by>
+        <sys_created_on>2022-09-07 17:08:01</sys_created_on>
+        <sys_id>b9234a251b7515507eefc912604bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18318ec45ca0000001</sys_recorded_at>
+        <sys_updated_by>nicola</sys_updated_by>
+        <sys_updated_on>2022-09-07 17:08:01</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>f1234a2541751550768ba273d8fa15e3</update_guid>
+        <update_guid_history>f1234a2541751550768ba273d8fa15e3:-1869819722,e87d166d2f095d101662749336cd2745:607433374,9a688e25a5c55d1065796de966d16805:-1766368830,c606066125c55d1047bff580a9cd3a88:-670720077,a694616d78055d109bd65e7405003aa3:-1121087223,0072eda935055d10037985b759bc5beb:-1622747018,b0422da992055d1040dfd317af6eacf3:257050918,484e5a4654341190cf9e0b91a8d2f026:890988320,61072ecb27ac55501a1ffd2fe0ad4c61:288972573,d195e28b15ac5550f74d0dcc0103c1e0:2068364763,1c16af28a75c1110e974435d4d913605:619972550,2fc157c4575091105ef43eac6227e92c:738301186,d4b15f84a7509110665da27ffceacb43:1852373600,b5ce75fea6801d10fe565d5a25da6d1c:-1775187253,1fbe79fe12801d1058c583bfccff1658:163717995,3c3ef1be16801d1067199778af991afe:-1873926097,b40e7dbed9801d10553139da91f5bb8a:123135085,d4c255bea5001d10dddef50acc056935:1467424345,14c1917eee001d109d556a297f715e77:743936929,0d901dba52001d104c8f3888ed50f889:288747890</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 08:23:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>025fbe53e3e1451081a9ab2996e4e421</sys_id>
+        <sys_metadata>743e85ba1b001d10bed02063b24bcb69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Registry</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent display_value="Guardian Users">f36228ea1b40d910bed02063b24bcb77</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_ui_action_743e85ba1b001d10bed02063b24bcb69</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_743e85ba1b001d10bed02063b24bcb69">b9234a251b7515507eefc912604bcbe3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 08:23:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

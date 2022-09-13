@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Registrant" max_length="40" name="x_snc_guardian_st_registrant" sizeclass="0" type="collection">
+    <element label="Registrant" max_length="40" name="x_snc_guardian_st_registrant" sizeclass="0" text_index="true" type="collection">
+        <element label="Address Line" max_length="200" name="address_line" type="string"/>
+        <element label="Country" max_length="100" name="country" type="string"/>
         <element label="Document" max_length="10000" name="document" type="string_full_utf8"/>
         <element label="Hash" max_length="50" name="hash" type="string"/>
         <element choice="1" label="Hedera Status" max_length="40" name="hedera_status" type="choice">
@@ -7,15 +9,18 @@
         </element>
         <element label="Id" max_length="20" name="id" type="string"/>
         <element label="Json" max_length="100000" name="json" type="string_full_utf8"/>
-        <element label="Legal Name" max_length="100" name="legal_name" type="string"/>
+        <element display="true" label="Legal Name" max_length="100" name="legal_name" type="string"/>
         <element label="Message Id" max_length="50" name="message_id" type="string"/>
         <element label="Owner" max_length="200" name="owner" type="string"/>
         <element label="Policy Id" max_length="50" name="policy_id" reference="x_snc_guardian_st_policy" type="reference"/>
+        <element label="Seq" max_length="40" name="seq" type="integer"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice/>
         </element>
         <element label="Tag" max_length="100" name="tag" type="string"/>
         <element label="Topic Id" max_length="20" name="topic_id" type="string"/>
         <element label="Type" max_length="100" name="type" type="string"/>
+        <element label="Vat" max_length="100" name="vat" type="string"/>
+        <element label="Zip" max_length="100" name="zip" type="string"/>
     </element>
 </database>

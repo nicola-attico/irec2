@@ -67,6 +67,9 @@
                 row.type = data[i].type
                 row.status = (data[i].option ? data[i].option.status : null)
                 row.json = JSON.stringify(data[i])
+				row.start_date = data[i].document.credentialSubject[0].field5.toString()
+				row.end_date = data[i].document.credentialSubject[0].field6.toString()
+				row.kwh = data[i].document.credentialSubject[0].field7
             }
             v_table.addRow(row)
         }
@@ -80,14 +83,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e20e4f11b3c9d507eefc912604bcb5e</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Issuance</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_6e20e4f11b3c9d507eefc912604bcb5e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-02 09:29:27</sys_updated_on>
+        <sys_updated_on>2022-09-07 16:15:17</sys_updated_on>
         <table>x_snc_guardian_st_issuance</table>
     </sys_script_vtable>
 </record_update>

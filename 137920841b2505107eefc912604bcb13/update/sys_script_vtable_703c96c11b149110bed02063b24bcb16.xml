@@ -56,6 +56,7 @@
 
         if (data[i].id == device_id || device_id == undefined || device_id == null) {
             row.id = data[i].id
+			row.seq = i
             row.owner = data[i].owner
             row.registrant = registrant_id + "@" + policy_id
             row.hash = data[i].hash
@@ -70,10 +71,14 @@
             row.status = (data[i].option ? data[i].option.status : null)
             row.json = JSON.stringify(data[i])
             row.sys_id = data[i].id + "@" + registrant_id + "@" + policy_id
+			row.device_name = data[i].document.credentialSubject[0].field4.field0
+			row.latitude = data[i].document.credentialSubject[0].field4.field4
+			row.longitude = data[i].document.credentialSubject[0].field4.field5
+			row.capacity = data[i].document.credentialSubject[0].field4.field7
+			row.units = data[i].document.credentialSubject[0].field4.field8
 
             v_table.addRow(row)
         }
-
     }
 
 })(v_table, v_query);]]></script>
@@ -83,14 +88,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>703c96c11b149110bed02063b24bcb16</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Device</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_703c96c11b149110bed02063b24bcb16</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-02 10:55:21</sys_updated_on>
+        <sys_updated_on>2022-09-12 11:33:01</sys_updated_on>
         <table>x_snc_guardian_st_device</table>
     </sys_script_vtable>
 </record_update>

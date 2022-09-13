@@ -4,69 +4,55 @@
             <element>policy</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-04 13:07:18</sys_created_on>
-            <sys_id>d00642621b4ddd10bed02063b24bcb90</sys_id>
+            <sys_created_on>2022-09-12 11:56:15</sys_created_on>
+            <sys_id>33bbee071b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-04 13:07:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>id</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-04 13:07:18</sys_created_on>
-            <sys_id>540642621b4ddd10bed02063b24bcb90</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-04 13:07:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>owner</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-04 13:07:18</sys_created_on>
-            <sys_id>d40642621b4ddd10bed02063b24bcb90</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-04 13:07:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>hash</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-04 13:07:18</sys_created_on>
-            <sys_id>580642621b4ddd10bed02063b24bcb90</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-04 13:07:18</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:56:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>properties</element>
-            <position>4</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-08-04 13:09:13</sys_created_on>
-            <sys_id>e8768e621b4ddd10bed02063b24bcbbe</sys_id>
+            <sys_created_on>2022-09-12 11:56:15</sys_created_on>
+            <sys_id>b3bbee071b395110bed02063b24bcbfe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-08-04 13:09:13</sys_updated_on>
+            <sys_updated_on>2022-09-12 11:56:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>create_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-12 14:23:02</sys_created_on>
+            <sys_id>f15d03871bb95110bed02063b24bcbb0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-12 14:23:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-12 14:30:28</sys_created_on>
+            <sys_id>b60f4fc71bb95110bed02063b24bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_verifiable_presentation" sys_domain="global" view="Default view">df0778561b899d10bed02063b24bcbcf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-12 14:30:28</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

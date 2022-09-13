@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Create &amp; Associate Guardian User</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Create Guardian User</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <post_insert_script><![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></post_insert_script>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=07a2ceb21bc01d10bed02063b24bcbbc&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script><![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></save_script>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[(function() {
+
+    try {
+        var inputs = {};
+
+        var username = Math.random().toString(36).substring(2, 10)
+        var password = 'test'
+		
+        inputs['username'] = username; // String 
+        inputs['password'] = password; // String 
+        inputs['root_did'] = producer.did; // String 
+
+        var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_guardian.configure_user').inForeground().withInputs(inputs).run();
+        var outputs = result.getOutputs();
+
+        var access_token = outputs['access_token']; // String
+        var account_id = outputs['account_id']; // String
+        var key = outputs['key']; // String
+        var did = outputs['did']; // String
+		
+		current.user = gs.getUserID()
+		current.jwt = access_token
+		current.username = username
+		current.password = password
+		current.is_root_authority = false
+		current.account_id = account_id
+
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error(message);
+    }
+
+})();]]></script>
+        <short_description>Create &amp; Associate Guardian User</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 14:29:10</sys_created_on>
+        <sys_id>07a2ceb21bc01d10bed02063b24bcbbc</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Create Guardian User</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_producer_07a2ceb21bc01d10bed02063b24bcbbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 09:53:14</sys_updated_on>
+        <table_name>x_snc_guardian_login</table_name>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="DELETE" query="documentkey=07a2ceb21bc01d10bed02063b24bcbbc"/>
+    <fx_price action="DELETE" query="id=07a2ceb21bc01d10bed02063b24bcbbc"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>07a2ceb21bc01d10bed02063b24bcbbc</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 14:29:10</sys_created_on>
+        <sys_id>7dd2cab21bc01d10bed02063b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 14:29:10</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sc_cat_item_producer_07a2ceb21bc01d10bed02063b24bcbbc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_producer"&gt;&lt;sc_cat_item_producer action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_edit&gt;false&lt;/allow_edit&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;can_cancel&gt;false&lt;/can_cancel&gt;&lt;category/&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan/&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description&gt;&lt;![CDATA[&lt;p&gt;Create &amp;amp; Associate Guardian User&lt;/p&gt;]]&gt;&lt;/description&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;Create Guardian User&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;post_insert_script&gt;&lt;![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/post_insert_script&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=07a2ceb21bc01d10bed02063b24bcbbc&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;redirect_url&gt;generated_record&lt;/redirect_url&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;save_options/&gt;&lt;save_script&gt;&lt;![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/save_script&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    try {
+        var inputs = {};
+
+        var username = Math.random().toString(36).substring(2, 10)
+        var password = 'test'
+		
+        inputs['username'] = username; // String 
+        inputs['password'] = password; // String 
+        inputs['root_did'] = producer.did; // String 
+
+        var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_guardian.configure_user').inForeground().withInputs(inputs).run();
+        var outputs = result.getOutputs();
+
+        var access_token = outputs['access_token']; // String
+        var account_id = outputs['account_id']; // String
+        var key = outputs['key']; // String
+        var did = outputs['did']; // String
+		
+		current.user = gs.getUserID()
+		current.jwt = access_token
+		current.username = username
+		current.password = password
+		current.is_root_authority = false
+		current.account_id = account_id
+
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error(message);
+    }
+
+})();]]&gt;&lt;/script&gt;&lt;short_description&gt;Create &amp;amp; Associate Guardian User&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item_producer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-16 14:29:10&lt;/sys_created_on&gt;&lt;sys_id&gt;07a2ceb21bc01d10bed02063b24bcbbc&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Guardian User&lt;/sys_name&gt;&lt;sys_package display_value="guardian" source="x_snc_guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_producer_07a2ceb21bc01d10bed02063b24bcbbc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-08 09:53:14&lt;/sys_updated_on&gt;&lt;table_name&gt;x_snc_guardian_login&lt;/table_name&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;view/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item_producer&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=07a2ceb21bc01d10bed02063b24bcbbc"/&gt;&lt;fx_price action="delete_multiple" query="id=07a2ceb21bc01d10bed02063b24bcbbc"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="USD"&gt;USD&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;07a2ceb21bc01d10bed02063b24bcbbc&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="USD"&gt;USD&lt;/reference_currency&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-16 14:29:10&lt;/sys_created_on&gt;&lt;sys_id&gt;7dd2cab21bc01d10bed02063b24bcbf4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-16 14:29:10&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item_producer&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1102703090</payload_hash>
+        <record_name>Create Guardian User</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 09:53:14</sys_created_on>
+        <sys_id>f63929391b35d150bed02063b24bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1831c8494880000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 09:53:14</sys_updated_on>
+        <type>Record Producer</type>
+        <update_guid>323929390735d150f989d09fdfb5c412</update_guid>
+        <update_guid_history>323929390735d150f989d09fdfb5c412:-1102703090,a782a5e91e055d10bb3e941be6832d4e:-1181560921,cc9ed286493411907f53d99b9ef88c07:-1975000185,facaab6c7e5c1110cc58308702ccbef0:762226475,77e55fc86550911037e231e38756c81b:1401687805,7843534840509110ed20a571135918a4:1525968767,4df21f08ea509110de7c2d770ca3bb4f:752536223,9b95ad88ecd85110e61a483c32c30c86:908850180,4145e58875d8511031577f7646bf6da4:-1204313807,f8d58e7601c01d1021195e3d026848f5:-1155804269,d1850e768fc01d102fd4a260eb410e5c:1222598815,df05463618c01d10bc4b752ff096c3fc:2099657600,75d242f26fc01d10d1a178adc8d9d6d9:-682708083</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create Guardian User">073929391b35d150bed02063b24bcb35</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 09:53:15</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_producer">sc_cat_item_producer</sys_db_object>
+        <sys_id>bad1f456d9a647ab90615ba5a5f46f61</sys_id>
+        <sys_metadata>07a2ceb21bc01d10bed02063b24bcbbc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Guardian User</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent display_value="Guardian Users">f36228ea1b40d910bed02063b24bcb77</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sc_cat_item_producer_07a2ceb21bc01d10bed02063b24bcbbc</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_producer_07a2ceb21bc01d10bed02063b24bcbbc">f63929391b35d150bed02063b24bcb12</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 09:53:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

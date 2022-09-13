@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Token" max_length="40" name="x_snc_guardian_st_token" sizeclass="0" type="collection">
+    <element label="Token" max_length="40" name="x_snc_guardian_st_token" sizeclass="0" text_index="true" type="collection">
         <element label="Admin Id" max_length="20" name="admin_id" type="string"/>
         <element label="Admin Key" max_length="50" name="admin_key" type="string"/>
         <element label="Associated" max_length="40" name="associated" type="boolean"/>

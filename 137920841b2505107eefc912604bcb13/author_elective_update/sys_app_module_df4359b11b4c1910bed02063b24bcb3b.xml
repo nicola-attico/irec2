@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>false</active>
+        <application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Root Authorities</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_guardian_login</name>
+        <order>140</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_guardian.root_authority_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 08:27:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df4359b11b4c1910bed02063b24bcb3b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Root Authorities</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_app_module_df4359b11b4c1910bed02063b24bcb3b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 11:58:31</sys_updated_on>
+        <timeline_page/>
+        <title>Root Authorities</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_app_module_df4359b11b4c1910bed02063b24bcb3b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>false</active><application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Root Authorities</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_guardian_login</name><order>140</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_snc_guardian.root_authority_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-13 08:27:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>df4359b11b4c1910bed02063b24bcb3b</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Root Authorities</sys_name><sys_overrides/><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_app_module_df4359b11b4c1910bed02063b24bcb3b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-01 11:58:31</sys_updated_on><timeline_page/><title>Root Authorities</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-2146637871</payload_hash>
+        <record_name>Root Authorities</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 11:58:31</sys_created_on>
+        <sys_id>6b799a291b095d107eefc912604bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1825945a11c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 11:58:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>63799a29c4095d1053b96adc342483b6</update_guid>
+        <update_guid_history>63799a29c4095d1053b96adc342483b6:-2146637871,ca4896e5cd095d101dfbb8d37c6bf153:-1103821162,60566368035c1110c69614bbaf9b24a2:590453845,3990e2c6558c59104ba3a1677c6167e9:1257072403,5b4359b1504c1910770e2f90f6aa823d:-516348430</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Root Authorities">596859391bf1d150bed02063b24bcb36</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 08:39:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>8442c1ad1fd1424c9267102349bc6624</sys_id>
+        <sys_metadata>df4359b11b4c1910bed02063b24bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian_login</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_app_module_df4359b11b4c1910bed02063b24bcb3b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_df4359b11b4c1910bed02063b24bcb3b">6b799a291b095d107eefc912604bcbb6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 08:39:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

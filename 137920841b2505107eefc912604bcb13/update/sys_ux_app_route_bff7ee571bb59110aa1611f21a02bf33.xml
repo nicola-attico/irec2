@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="guardian Config">77f7ee5735b5911066da86a32d6acc34</app_config>
+        <description/>
+        <fields/>
+        <icon/>
+        <name>Analytics Center</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>analytics-center</route_type>
+        <screen_type display_value="Analytics Center">fbf7ee570eb59110641e95e4a30c3833</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:18:22</sys_created_on>
+        <sys_id>bff7ee571bb59110aa1611f21a02bf33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Analytics Center</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_ux_app_route_bff7ee571bb59110aa1611f21a02bf33</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:18:22</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=bff7ee571bb59110aa1611f21a02bf33"/>
+</record_update>

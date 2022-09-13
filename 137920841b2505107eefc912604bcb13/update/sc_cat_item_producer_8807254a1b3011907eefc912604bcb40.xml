@@ -72,28 +72,35 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script><![CDATA[(function() {
+        <script><![CDATA[try {
+    var inputs = {};
+    inputs['device_sys_id'] = producer.device.toString()
+    inputs['registrant_sys_id'] = producer.device.toString().split("@")[1] + "@" + producer.device.toString().split("@")[2]
+	inputs['policy_sys_id'] = producer.device.toString().split("@")[2]
 	
-	try {
-		var inputs = {};
-		inputs['device_id'] = producer.device_id.toString(); // String 
-		inputs['device_sys_id'] = producer.device_id.toString() + "@" + producer.registrant_id.toString() + "@" + producer.policy_id.toString()
-		inputs['registrant_id'] = producer.registrant_id.toString(); // String 
-		inputs['registrant_sys_id'] = producer.registrant_id.toString() + "@" + producer.policy_id.toString()
-		inputs['policy_id'] = producer.policy_id.toString(); // String 
-		inputs['kwh'] = producer.kwh.toString(); // String 
-		inputs['start_date'] = producer.start_date.toString(); // Date 
-		inputs['end_date'] = producer.end_date.toString(); // Date 
+	inputs['device_id'] = producer.device.toString().split("@")[0]; // String 
+    inputs['registrant_id'] = producer.device.toString().split("@")[1]; // String 
+    inputs['policy_id'] = producer.device.toString().split("@")[2]; // String 
 
-		var result = sn_fd.FlowAPI.getRunner().action('x_snc_guardian.create_issuance_request').inForeground().withInputs(inputs).run();
-		var outputs = result.getOutputs();
-	
-	} catch (ex) {
-		var message = ex.getMessage();
-		gs.error(message);
-	}
-	
-})();]]></script>
+	inputs['kwh'] = producer.kwh.toString(); // String 
+    inputs['start_date'] = producer.start_date.toString(); // Date 
+    inputs['end_date'] = producer.end_date.toString(); // Date 
+
+    var result = sn_fd.FlowAPI.getRunner().action('x_snc_guardian.create_issuance_request').inForeground().withInputs(inputs).run();
+    var outputs = result.getOutputs();
+
+    var issuance = new GlideRecord("x_snc_guardian_st_issuance")
+    issuance.addQuery("device", producer.device.toString())
+    issuance.orderByDesc("seq")
+    issuance.query()
+    issuance.next()
+
+    producer.redirect = issuance.getLink(false)
+
+} catch (ex) {
+    var message = ex.getMessage();
+    gs.error(message);
+}]]></script>
         <short_description>Request issuance</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -102,14 +109,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-21 11:19:10</sys_created_on>
         <sys_id>8807254a1b3011907eefc912604bcb40</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Request Issuance</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sc_cat_item_producer_8807254a1b3011907eefc912604bcb40</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-02 12:16:02</sys_updated_on>
+        <sys_updated_on>2022-09-12 11:25:19</sys_updated_on>
         <table_name>x_snc_guardian_req</table_name>
         <taxonomy_topic/>
         <template/>

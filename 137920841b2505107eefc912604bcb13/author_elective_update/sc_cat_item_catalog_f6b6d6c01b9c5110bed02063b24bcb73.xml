@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Create Application">64a656c01b9c5110bed02063b24bcba8</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 13:08:28</sys_created_on>
+        <sys_id>f6b6d6c01b9c5110bed02063b24bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Application</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_f6b6d6c01b9c5110bed02063b24bcb73</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 13:08:28</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sc_cat_item_catalog_f6b6d6c01b9c5110bed02063b24bcb73</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create Application">64a656c01b9c5110bed02063b24bcba8</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-20 13:08:28</sys_created_on><sys_id>f6b6d6c01b9c5110bed02063b24bcb73</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Create Application</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sc_cat_item_catalog_f6b6d6c01b9c5110bed02063b24bcb73</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-20 13:08:28</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1277689544</payload_hash>
+        <record_name>Service Catalog.Create Application</record_name>
+        <reverted_from/>
+        <source>5379a0841b2505107eefc912604bcb83</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 13:08:28</sys_created_on>
+        <sys_id>76b6d6c01b9c5110bed02063b24bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181813a92090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 13:08:28</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>beb6d6c0ce9c5110d16660cbd6bc9475</update_guid>
+        <update_guid_history>beb6d6c0ce9c5110d16660cbd6bc9475:-1277689544</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Create Application">acd961791b35d150bed02063b24bcb5d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 09:55:48</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>2fff6049eb044af0aa0cd0883f98d100</sys_id>
+        <sys_metadata>f6b6d6c01b9c5110bed02063b24bcb73</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Application</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent display_value="">64a656c01b9c5110bed02063b24bcba8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_f6b6d6c01b9c5110bed02063b24bcb73</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_f6b6d6c01b9c5110bed02063b24bcb73">76b6d6c01b9c5110bed02063b24bcb76</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 09:55:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

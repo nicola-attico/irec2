@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_playbook_experience_activity_ui">
+    <sys_playbook_experience_activity_ui action="DELETE">
+        <experience_type display_value="Record">e12af577871333003058d1a936cb0ba4</experience_type>
+        <macroponent/>
+        <name>Onboarding UI</name>
+        <playbook_experience display_value="Onboarding">003b269b1bb59110bed02063b24bcb76</playbook_experience>
+        <screen/>
+        <sys_class_name>sys_playbook_experience_activity_ui</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:58:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3511bedf1bb59110bed02063b24bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding UI</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_playbook_experience_activity_ui_3511bedf1bb59110bed02063b24bcbb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:58:33</sys_updated_on>
+        <ui_template display_value="Default">0f3d316cff313010667053ea793bf150</ui_template>
+    </sys_playbook_experience_activity_ui>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_playbook_experience_activity_ui_3511bedf1bb59110bed02063b24bcbb5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_playbook_experience_activity_ui"><sys_playbook_experience_activity_ui action="INSERT_OR_UPDATE"><experience_type display_value="Record">e12af577871333003058d1a936cb0ba4</experience_type><macroponent/><name>Onboarding UI</name><playbook_experience display_value="Onboarding">003b269b1bb59110bed02063b24bcb76</playbook_experience><screen/><sys_class_name>sys_playbook_experience_activity_ui</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:58:33</sys_created_on><sys_domain>global</sys_domain><sys_id>3511bedf1bb59110bed02063b24bcbb5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Onboarding UI</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_playbook_experience_activity_ui_3511bedf1bb59110bed02063b24bcbb5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:58:33</sys_updated_on><ui_template display_value="Default">0f3d316cff313010667053ea793bf150</ui_template></sys_playbook_experience_activity_ui></record_update>]]></payload>
+        <payload_hash>-972592837</payload_hash>
+        <record_name>Onboarding UI</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 07:01:01</sys_created_on>
+        <sys_id>3cc17a131bf59110bed02063b24bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18335a6b5630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 07:01:01</sys_updated_on>
+        <type>Playbook Activity UI</type>
+        <update_guid>4d3132139af591106202482474c9471c</update_guid>
+        <update_guid_history>4d3132139af591106202482474c9471c:-1515592596,4d3132139af591106202482474c9471c:-1515592596,4d3132139af591106202482474c9471c:-1515592596</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 07:01:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_playbook_experience_activity_ui">sys_playbook_experience_activity_ui</sys_db_object>
+        <sys_id>15463e5c7ce349c89fe3930638212440</sys_id>
+        <sys_metadata>3511bedf1bb59110bed02063b24bcbb5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding UI</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_playbook_experience_activity_ui_3511bedf1bb59110bed02063b24bcbb5</sys_update_name>
+        <sys_update_version display_value="sys_playbook_experience_activity_ui_3511bedf1bb59110bed02063b24bcbb5">3cc17a131bf59110bed02063b24bcb30</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 07:01:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

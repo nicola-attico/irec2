@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>false</active>
+        <application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_snc_guardian_login">userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="user" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DETAIL</link_type>
+        <map_page/>
+        <mobile_title>Login</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_guardian_login</name>
+        <order>15</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>green</sys_created_by>
+        <sys_created_on>2022-06-15 13:00:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80b4ac6e1b40d910bed02063b24bcbd3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>My User Association</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_app_module_80b4ac6e1b40d910bed02063b24bcbd3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 07:39:58</sys_updated_on>
+        <timeline_page/>
+        <title>My User Association</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_app_module_80b4ac6e1b40d910bed02063b24bcbd3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>false</active><application display_value="Guardian - iRec v2 policy">f87e394c1be505107eefc912604bcb0d</application><assessment/><device_type/><filter table="x_snc_guardian_login">userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="user" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>DETAIL</link_type><map_page/><mobile_title>Login</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_guardian_login</name><order>15</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>green</sys_created_by><sys_created_on>2022-06-15 13:00:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>80b4ac6e1b40d910bed02063b24bcbd3</sys_id><sys_mod_count>6</sys_mod_count><sys_name>My User Association</sys_name><sys_overrides/><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_app_module_80b4ac6e1b40d910bed02063b24bcbd3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-01 07:39:58</sys_updated_on><timeline_page/><title>My User Association</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1200986295</payload_hash>
+        <record_name>My User Association</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 07:39:58</sys_created_on>
+        <sys_id>405e59651b055d107eefc912604bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1825858eaa90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 07:39:58</sys_updated_on>
+        <type>Module</type>
+        <update_guid>885e596562055d101872598c86c468f9</update_guid>
+        <update_guid_history>885e596562055d101872598c86c468f9:-1200986295,8749232c185c1110554303213e221432:2130863402,7f9567288e5c11100695a344df8738b3:554431419,fc752728b25c1110aca8f4a41ef83277:802393040,edf460ae0840d9108aef1308ed2b75a7:-891994370,3de460aedf40d910f6567a091291f4e6:-1751893058,eed4ec6e2740d910b6c573f1938c2d05:-400702540</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My User Association">d16859391bf1d150bed02063b24bcb2e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 08:39:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>991ff3746bf14554a57583f708172a10</sys_id>
+        <sys_metadata>80b4ac6e1b40d910bed02063b24bcbd3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My User Association</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_app_module_80b4ac6e1b40d910bed02063b24bcbd3</sys_update_name>
+        <sys_update_version display_value="sys_app_module_80b4ac6e1b40d910bed02063b24bcbd3">405e59651b055d107eefc912604bcbfa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 08:39:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

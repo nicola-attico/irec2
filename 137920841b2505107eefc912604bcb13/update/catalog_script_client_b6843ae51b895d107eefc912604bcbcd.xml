@@ -23,7 +23,7 @@
 	var policy = g.getParam("sysparm_policy")
 	
 	if (policy) {
-        g_form.setValue('policy_id', policy);
+        g_form.setValue('policy', policy);
     }	
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -32,15 +32,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b6843ae51b895d107eefc912604bcbcd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Set policy id in register</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>catalog_script_client_b6843ae51b895d107eefc912604bcbcd</sys_update_name>
-        <sys_updated_by>nicola</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:58:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 13:02:16</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>0</ui_type>

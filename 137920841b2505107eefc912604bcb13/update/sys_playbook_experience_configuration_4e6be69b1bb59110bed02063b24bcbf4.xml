@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_playbook_experience_configuration">
+    <sys_playbook_experience_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <assigned_to_field>registry</assigned_to_field>
+        <expand_first_prioritized_card>true</expand_first_prioritized_card>
+        <filter_fields>assigned_to,state</filter_fields>
+        <filter_on_playbook_card_status>true</filter_on_playbook_card_status>
+        <inaccessible_data_visibility>HIDE_INACCESSIBLE_DATA</inaccessible_data_visibility>
+        <max_form_fields_on_card>3</max_form_fields_on_card>
+        <order>0</order>
+        <pending_activity_display>SHOW_ALL</pending_activity_display>
+        <playbook_experience display_value="Onboarding">003b269b1bb59110bed02063b24bcb76</playbook_experience>
+        <playbook_record/>
+        <playbook_table>x_snc_guardian_onboarding</playbook_table>
+        <show_activity_state>true</show_activity_state>
+        <show_automated_manual_indicator>true</show_automated_manual_indicator>
+        <sla_configuration/>
+        <sys_class_name>sys_playbook_experience_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:34:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4e6be69b1bb59110bed02063b24bcbf4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_playbook_experience_configuration_4e6be69b1bb59110bed02063b24bcbf4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 09:33:35</sys_updated_on>
+    </sys_playbook_experience_configuration>
+</record_update>

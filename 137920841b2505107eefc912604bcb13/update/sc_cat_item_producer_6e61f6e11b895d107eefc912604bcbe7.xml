@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</category>
         <checked_out/>
         <cost>0</cost>
         <custom_cart/>
@@ -68,15 +68,19 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
         <script><![CDATA[	try {
 		var inputs = {};
-		inputs['policy_id'] = producer.policy_id; // String 
+		inputs['policy_id'] = producer.policy; // String 
 		inputs['date'] = producer.date; // Date 
 		inputs['legal_name'] = producer.legal_name
+		inputs['zip'] = producer.zip
+		inputs['country'] = producer.country
+		inputs['vat'] = producer.vat
+		inputs['address_line'] = producer.address_line
 
 		var result = sn_fd.FlowAPI.getRunner().action('x_snc_guardian.create_application').inForeground().withInputs(inputs).run();
 		var outputs = result.getOutputs();
@@ -85,9 +89,13 @@
 		var r = JSON.parse(response)
 		
 		var registrant = new GlideRecord("x_snc_guardian_st_registrant")
-		registrant.get(r.id + "@" + producer.policy_id)
+		registrant.addQuery("policy_id", producer.policy)
+		registrant.orderByDesc("seq")
+		registrant.query()
+		registrant.next()
 		
 		producer.redirect = registrant.getLink(false)
+		producer.portal_redirect = "sp?id=form&table=x_snc_guardian_st_registrant&sys_id=" + registrant.sys_id
 		
 	} catch (ex) {
 		var message = ex.getMessage();
@@ -102,14 +110,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-01 13:43:44</sys_created_on>
         <sys_id>6e61f6e11b895d107eefc912604bcbe7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Register</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sc_cat_item_producer_6e61f6e11b895d107eefc912604bcbe7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-05 13:38:20</sys_updated_on>
+        <sys_updated_on>2022-09-12 08:12:05</sys_updated_on>
         <table_name>x_snc_guardian_req</table_name>
         <taxonomy_topic/>
         <template/>

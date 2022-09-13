@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Token User Association" max_length="40" name="x_snc_guardian_st_token_user_association" sizeclass="0" type="collection">
+    <element label="Token User Association" max_length="40" name="x_snc_guardian_st_token_user_association" sizeclass="0" text_index="true" type="collection">
         <element label="Associated" max_length="40" name="associated" type="boolean"/>
         <element label="Frozen" max_length="40" name="frozen" type="boolean"/>
         <element label="Kyc" max_length="40" name="kyc" type="boolean"/>

@@ -63,12 +63,15 @@
 	//gs.addInfoMessage(JSON.stringify(data))
 
     var docs = []
-    for (i = 0; i < data.documents.length; i++) {
+	for (i = 0; i < data.documents.length; i++) {
         docs.push(data.documents[i])
     }
-	docs.push(data.mintDocument)
     docs.push(data.policyDocument)
-    docs.push(data.policyCreatorDocument)
+	docs.push(data.policyCreatorDocument)
+
+	//docs.push(data.mintDocument)
+
+
 
 
 //    gs.addInfoMessage(docs.length)
@@ -86,8 +89,16 @@
             row.username = docs[i].username
 			row.tag = docs[i].tag
 			row.type = docs[i].type
-			row.issuer = docs[i].issuer			
+			row.issuer = docs[i].issuer		
 			row.json = JSON.stringify(docs[i])
+			row.seq = docs.length - i
+			row.proof_created = docs[i].document.document.proof.created
+			row.proof_jws = docs[i].document.document.proof.jws
+			row.proof_purpose = docs[i].document.document.proof.proofPurpose
+			row.proof_type = docs[i].document.document.proof.type
+			row.proof_verification_method = docs[i].document.document.proof.verificationMethod
+			row.token = docs[i].document.document.credentialSubject[0].tokenId
+			row.amount = docs[i].document.document.credentialSubject[0].amount
 			
 			//vc
 			row.id = docs[i].document.document.id
@@ -122,14 +133,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e44fc921b899d10bed02063b24bcba8</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Document</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_6e44fc921b899d10bed02063b24bcba8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-04 15:51:33</sys_updated_on>
+        <sys_updated_on>2022-09-12 14:39:04</sys_updated_on>
         <table>x_snc_guardian_st_document</table>
     </sys_script_vtable>
 </record_update>

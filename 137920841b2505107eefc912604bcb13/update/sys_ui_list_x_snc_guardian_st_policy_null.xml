@@ -3,182 +3,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
+            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1891c2a51bf59150bed02063b24bcbdf</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5e08a6d81bd89110bed02063b24bcb54</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-07 17:01:04</sys_created_on>
+            <sys_id>1891c2a51bf59150bed02063b24bcbe1</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-07 17:01:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>version</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
+            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1891c2a51bf59150bed02063b24bcbdf</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>de08a6d81bd89110bed02063b24bcb54</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-07 17:01:04</sys_created_on>
+            <sys_id>9c91c2a51bf59150bed02063b24bcbe1</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>creator</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5208a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-07 17:01:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>description</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
+            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1891c2a51bf59150bed02063b24bcbdf</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>3</position>
+            <position>2</position>
             <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>d208a6d81bd89110bed02063b24bcb55</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-07 17:01:04</sys_created_on>
+            <sys_id>1091c2a51bf59150bed02063b24bcbe2</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>id</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>4</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5608a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>message_id</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>5</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>d608a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>owner</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>6</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5a08a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>policy_roles</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>7</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>da08a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>policy_tag</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5e08a6d81bd89110bed02063b24bcb55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-07 17:01:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>status</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
+            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1891c2a51bf59150bed02063b24bcbdf</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>9</position>
+            <position>3</position>
             <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>de08a6d81bd89110bed02063b24bcb55</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-07 17:01:04</sys_created_on>
+            <sys_id>9091c2a51bf59150bed02063b24bcbe2</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>topic_id</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>10</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>5208a6d81bd89110bed02063b24bcb56</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>config</element>
-            <list_id display_value="x_snc_guardian_st_policy" element="NULL" name="x_snc_guardian_st_policy" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de08a6d81bd89110bed02063b24bcb53</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>11</position>
-            <sum>false</sum>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
-            <sys_id>d208a6d81bd89110bed02063b24bcb56</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-07 17:01:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -191,19 +71,19 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-06-21 09:02:33</sys_created_on>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-07 17:01:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>de08a6d81bd89110bed02063b24bcb53</sys_id>
+            <sys_id>1891c2a51bf59150bed02063b24bcbdf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_guardian_st_policy</sys_name>
             <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
             <sys_policy/>
             <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_guardian_st_policy_null</sys_update_name>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-06-21 09:02:33</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-07 17:01:04</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

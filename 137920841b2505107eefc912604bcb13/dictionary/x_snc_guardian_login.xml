@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Login" max_length="40" name="x_snc_guardian_login" sizeclass="2" type="collection">
+    <element label="Guardian Users" max_length="40" name="x_snc_guardian_login" sizeclass="1" text_index="true" type="collection">
         <element label="Account Id" max_length="50" name="account_id" type="string"/>
         <element label="Confirmed" max_length="40" name="confirmed" type="boolean"/>
         <element label="Did" max_length="200" name="did" type="string" unique="true"/>

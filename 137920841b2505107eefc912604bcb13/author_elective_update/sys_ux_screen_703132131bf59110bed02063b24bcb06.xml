@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>false</active>
+        <app_config display_value="Playbook Builder Config">2ba981dcc31a201098c960bc0eba8f00</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Onboarding UI">f43132131bf59110bed02063b24bcb02</macroponent>
+        <macroponent_config>{
+  "experienceProperties" : {
+    "experience_status_table" : {
+      "name" : "experience_status_table",
+      "label" : "Experience Status Table",
+      "value" : "sys_flow_data",
+      "displayValue" : "sys_flow_data",
+      "elementData" : {
+        "type" : "table_name",
+        "reference" : null
+      }
+    },
+    "experience_status_record" : {
+      "name" : "experience_status_record",
+      "label" : "Experience Status Record",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "document_id",
+        "reference" : null
+      }
+    },
+    "title" : {
+      "name" : "title",
+      "label" : "Title",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "pending_title" : {
+      "name" : "pending_title",
+      "label" : "Pending State Title",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "tagline" : {
+      "name" : "tagline",
+      "label" : "Tagline",
+      "value" : "Sample Activity Tagline",
+      "displayValue" : "Sample Activity Tagline",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "description" : {
+      "name" : "description",
+      "label" : "Description",
+      "value" : "&lt;p&gt;A sample description for an activity&lt;/p&gt;",
+      "displayValue" : "&lt;p&gt;A sample description for an activity&lt;/p&gt;",
+      "elementData" : {
+        "type" : "html",
+        "reference" : null
+      }
+    },
+    "pending_description" : {
+      "name" : "pending_description",
+      "label" : "Pending State Description",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "html",
+        "reference" : null
+      }
+    },
+    "icon" : {
+      "name" : "icon",
+      "label" : "Icon",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "reference",
+        "reference" : "st_sys_design_system_icon"
+      }
+    },
+    "show_sla" : {
+      "name" : "show_sla",
+      "label" : "Show SLA",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "is_automated" : {
+      "name" : "is_automated",
+      "label" : "Is Automated",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "form_view" : {
+      "name" : "form_view",
+      "label" : "Form View",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "form_fields" : {
+      "name" : "form_fields",
+      "label" : "Form fields",
+      "value" : "type,short_description",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "field_list",
+        "reference" : null
+      }
+    },
+    "record_fields" : {
+      "name" : "record_fields",
+      "label" : "Record fields",
+      "value" : "state,assigned_to",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "field_list",
+        "reference" : null
+      },
+      "relatedProperties" : [ {
+        "name" : "assigned_to",
+        "label" : "Assigned to",
+        "value" : "0a826bf03710200044e0bfc8bcbe5d7a",
+        "displayValue" : "Adela Cervantsz",
+        "elementData" : {
+          "type" : "reference",
+          "reference" : "sys_user"
+        }
+      }, {
+        "name" : "state",
+        "label" : "State",
+        "value" : "work_in_progress",
+        "displayValue" : "Work in Progress",
+        "elementData" : {
+          "type" : "string",
+          "reference" : null
+        }
+      }, {
+        "name" : "type",
+        "label" : "Type",
+        "value" : "chat",
+        "displayValue" : "Chat",
+        "elementData" : {
+          "type" : "string",
+          "reference" : null
+        }
+      } ]
+    },
+    "show_checklist" : {
+      "name" : "show_checklist",
+      "label" : "Show Checklist",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "attachment_source" : {
+      "name" : "attachment_source",
+      "label" : "Attachment source",
+      "value" : "associated_record",
+      "displayValue" : "associated_record",
+      "elementData" : {
+        "type" : "choice",
+        "reference" : null
+      }
+    },
+    "attachments_read_only" : {
+      "name" : "attachments_read_only",
+      "label" : "Attachments read only",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "footer" : {
+      "name" : "footer",
+      "label" : "Footer",
+      "value" : "A sample footer for an activity",
+      "displayValue" : "A sample footer for an activity",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    }
+  },
+  "parentTable" : "interaction",
+  "parentRecord" : "-1",
+  "associatedTable" : "interaction",
+  "associatedRecord" : "-1",
+  "activityLabel" : "Sample Activity",
+  "activityState" : "IN_PROGRESS",
+  "assignedTo" : {
+    "value" : "0a826bf03710200044e0bfc8bcbe5d7a",
+    "displayValue" : "Adela Cervantsz",
+    "avatar" : "58e13b44c3222010ae17dd981840ddd3.iix?t=small"
+  },
+  "prioritized" : false,
+  "fillContainer" : false,
+  "activityDefinitionId" : "47e9278fff131010834953bd6338f16e",
+  "playbookExperienceId" : "",
+  "configProperties" : {
+    "showActivityState" : true,
+    "showAutomatedManualIndicator" : true,
+    "filterFields" : "assigned_to",
+    "maxFormFieldsOnCard" : 15,
+    "slaConfiguration" : "",
+    "expandFirstPrioritizedCard" : true,
+    "pendingActivityDisplay" : "SHOW_ALL"
+  },
+  "playbookContext" : {
+    "state" : {
+      "value" : "IN_PROGRESS",
+      "displayValue" : "In Progress"
+    },
+    "contextId" : "b0f9599e5a613010021c69334198ef8a"
+  },
+  "laneContext" : {
+    "name" : "",
+    "title" : "",
+    "order" : 0,
+    "state" : {
+      "value" : "IN_PROGRESS",
+      "displayValue" : "In Progress"
+    },
+    "contextId" : ""
+  },
+  "advanced" : {
+    "inUIBuilder" : true,
+    "associatedRecordModCount" : 0,
+    "processedOn" : 0,
+    "activityType" : {
+      "value" : "e12af577871333003058d1a936cb0ba4",
+      "displayValue" : "Record"
+    },
+    "contextId" : "",
+    "filterData" : [ ],
+    "loading" : false,
+    "userId" : "@context.session.user.user_id",
+    "expandOnMountOrChange" : false,
+    "workspaceConfigId" : "",
+    "authorizedActions" : [ "complete", "skip", "restart" ],
+    "formApi" : {
+      "requestReload" : "",
+      "requestValidation" : "",
+      "requestSubmitAction" : "",
+      "dispatchDeclarativeAction" : null,
+      "formFieldsRequired" : false,
+      "modalDeclarativeAction" : null
+    }
+  }
+}</macroponent_config>
+        <name>Onboarding - Onboarding UI</name>
+        <order>0</order>
+        <parent_macroponent display_value="Playbook App Shell">64f1d8fbc3ca201098c960bc0eba8fe3</parent_macroponent>
+        <required_translations>[ {
+  "message" : "Assigned to",
+  "comment" : ""
+}, {
+  "message" : "Attachment source",
+  "comment" : ""
+}, {
+  "message" : "Attachments read only",
+  "comment" : ""
+}, {
+  "message" : "Description",
+  "comment" : ""
+}, {
+  "message" : "Experience Status Record",
+  "comment" : ""
+}, {
+  "message" : "Experience Status Table",
+  "comment" : ""
+}, {
+  "message" : "Footer",
+  "comment" : ""
+}, {
+  "message" : "Form View",
+  "comment" : ""
+}, {
+  "message" : "Form fields",
+  "comment" : ""
+}, {
+  "message" : "Icon",
+  "comment" : ""
+}, {
+  "message" : "Is Automated",
+  "comment" : ""
+}, {
+  "message" : "Pending State Description",
+  "comment" : ""
+}, {
+  "message" : "Pending State Title",
+  "comment" : ""
+}, {
+  "message" : "Record fields",
+  "comment" : ""
+}, {
+  "message" : "Show Checklist",
+  "comment" : ""
+}, {
+  "message" : "Show SLA",
+  "comment" : ""
+}, {
+  "message" : "State",
+  "comment" : ""
+}, {
+  "message" : "Tagline",
+  "comment" : ""
+}, {
+  "message" : "Title",
+  "comment" : ""
+}, {
+  "message" : "Type",
+  "comment" : ""
+} ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Custom Activity UIs">5b1efb5ac3113010948404186e40dd54</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:58:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>703132131bf59110bed02063b24bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding - Onboarding UI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_ux_screen_703132131bf59110bed02063b24bcb06</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:58:34</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=703132131bf59110bed02063b24bcb06"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_ux_screen_703132131bf59110bed02063b24bcb06</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>false</active><app_config display_value="Playbook Builder Config">2ba981dcc31a201098c960bc0eba8f00</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Onboarding UI">f43132131bf59110bed02063b24bcb02</macroponent><macroponent_config>{
+  "experienceProperties" : {
+    "experience_status_table" : {
+      "name" : "experience_status_table",
+      "label" : "Experience Status Table",
+      "value" : "sys_flow_data",
+      "displayValue" : "sys_flow_data",
+      "elementData" : {
+        "type" : "table_name",
+        "reference" : null
+      }
+    },
+    "experience_status_record" : {
+      "name" : "experience_status_record",
+      "label" : "Experience Status Record",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "document_id",
+        "reference" : null
+      }
+    },
+    "title" : {
+      "name" : "title",
+      "label" : "Title",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "pending_title" : {
+      "name" : "pending_title",
+      "label" : "Pending State Title",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "tagline" : {
+      "name" : "tagline",
+      "label" : "Tagline",
+      "value" : "Sample Activity Tagline",
+      "displayValue" : "Sample Activity Tagline",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "description" : {
+      "name" : "description",
+      "label" : "Description",
+      "value" : "&lt;p&gt;A sample description for an activity&lt;/p&gt;",
+      "displayValue" : "&lt;p&gt;A sample description for an activity&lt;/p&gt;",
+      "elementData" : {
+        "type" : "html",
+        "reference" : null
+      }
+    },
+    "pending_description" : {
+      "name" : "pending_description",
+      "label" : "Pending State Description",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "html",
+        "reference" : null
+      }
+    },
+    "icon" : {
+      "name" : "icon",
+      "label" : "Icon",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "reference",
+        "reference" : "st_sys_design_system_icon"
+      }
+    },
+    "show_sla" : {
+      "name" : "show_sla",
+      "label" : "Show SLA",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "is_automated" : {
+      "name" : "is_automated",
+      "label" : "Is Automated",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "form_view" : {
+      "name" : "form_view",
+      "label" : "Form View",
+      "value" : "",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    },
+    "form_fields" : {
+      "name" : "form_fields",
+      "label" : "Form fields",
+      "value" : "type,short_description",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "field_list",
+        "reference" : null
+      }
+    },
+    "record_fields" : {
+      "name" : "record_fields",
+      "label" : "Record fields",
+      "value" : "state,assigned_to",
+      "displayValue" : "",
+      "elementData" : {
+        "type" : "field_list",
+        "reference" : null
+      },
+      "relatedProperties" : [ {
+        "name" : "assigned_to",
+        "label" : "Assigned to",
+        "value" : "0a826bf03710200044e0bfc8bcbe5d7a",
+        "displayValue" : "Adela Cervantsz",
+        "elementData" : {
+          "type" : "reference",
+          "reference" : "sys_user"
+        }
+      }, {
+        "name" : "state",
+        "label" : "State",
+        "value" : "work_in_progress",
+        "displayValue" : "Work in Progress",
+        "elementData" : {
+          "type" : "string",
+          "reference" : null
+        }
+      }, {
+        "name" : "type",
+        "label" : "Type",
+        "value" : "chat",
+        "displayValue" : "Chat",
+        "elementData" : {
+          "type" : "string",
+          "reference" : null
+        }
+      } ]
+    },
+    "show_checklist" : {
+      "name" : "show_checklist",
+      "label" : "Show Checklist",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "attachment_source" : {
+      "name" : "attachment_source",
+      "label" : "Attachment source",
+      "value" : "associated_record",
+      "displayValue" : "associated_record",
+      "elementData" : {
+        "type" : "choice",
+        "reference" : null
+      }
+    },
+    "attachments_read_only" : {
+      "name" : "attachments_read_only",
+      "label" : "Attachments read only",
+      "value" : "0",
+      "displayValue" : "false",
+      "elementData" : {
+        "type" : "boolean",
+        "reference" : null
+      }
+    },
+    "footer" : {
+      "name" : "footer",
+      "label" : "Footer",
+      "value" : "A sample footer for an activity",
+      "displayValue" : "A sample footer for an activity",
+      "elementData" : {
+        "type" : "string",
+        "reference" : null
+      }
+    }
+  },
+  "parentTable" : "interaction",
+  "parentRecord" : "-1",
+  "associatedTable" : "interaction",
+  "associatedRecord" : "-1",
+  "activityLabel" : "Sample Activity",
+  "activityState" : "IN_PROGRESS",
+  "assignedTo" : {
+    "value" : "0a826bf03710200044e0bfc8bcbe5d7a",
+    "displayValue" : "Adela Cervantsz",
+    "avatar" : "58e13b44c3222010ae17dd981840ddd3.iix?t=small"
+  },
+  "prioritized" : false,
+  "fillContainer" : false,
+  "activityDefinitionId" : "47e9278fff131010834953bd6338f16e",
+  "playbookExperienceId" : "",
+  "configProperties" : {
+    "showActivityState" : true,
+    "showAutomatedManualIndicator" : true,
+    "filterFields" : "assigned_to",
+    "maxFormFieldsOnCard" : 15,
+    "slaConfiguration" : "",
+    "expandFirstPrioritizedCard" : true,
+    "pendingActivityDisplay" : "SHOW_ALL"
+  },
+  "playbookContext" : {
+    "state" : {
+      "value" : "IN_PROGRESS",
+      "displayValue" : "In Progress"
+    },
+    "contextId" : "b0f9599e5a613010021c69334198ef8a"
+  },
+  "laneContext" : {
+    "name" : "",
+    "title" : "",
+    "order" : 0,
+    "state" : {
+      "value" : "IN_PROGRESS",
+      "displayValue" : "In Progress"
+    },
+    "contextId" : ""
+  },
+  "advanced" : {
+    "inUIBuilder" : true,
+    "associatedRecordModCount" : 0,
+    "processedOn" : 0,
+    "activityType" : {
+      "value" : "e12af577871333003058d1a936cb0ba4",
+      "displayValue" : "Record"
+    },
+    "contextId" : "",
+    "filterData" : [ ],
+    "loading" : false,
+    "userId" : "@context.session.user.user_id",
+    "expandOnMountOrChange" : false,
+    "workspaceConfigId" : "",
+    "authorizedActions" : [ "complete", "skip", "restart" ],
+    "formApi" : {
+      "requestReload" : "",
+      "requestValidation" : "",
+      "requestSubmitAction" : "",
+      "dispatchDeclarativeAction" : null,
+      "formFieldsRequired" : false,
+      "modalDeclarativeAction" : null
+    }
+  }
+}</macroponent_config><name>Onboarding - Onboarding UI</name><order>0</order><parent_macroponent display_value="Playbook App Shell">64f1d8fbc3ca201098c960bc0eba8fe3</parent_macroponent><required_translations>[ {
+  "message" : "Assigned to",
+  "comment" : ""
+}, {
+  "message" : "Attachment source",
+  "comment" : ""
+}, {
+  "message" : "Attachments read only",
+  "comment" : ""
+}, {
+  "message" : "Description",
+  "comment" : ""
+}, {
+  "message" : "Experience Status Record",
+  "comment" : ""
+}, {
+  "message" : "Experience Status Table",
+  "comment" : ""
+}, {
+  "message" : "Footer",
+  "comment" : ""
+}, {
+  "message" : "Form View",
+  "comment" : ""
+}, {
+  "message" : "Form fields",
+  "comment" : ""
+}, {
+  "message" : "Icon",
+  "comment" : ""
+}, {
+  "message" : "Is Automated",
+  "comment" : ""
+}, {
+  "message" : "Pending State Description",
+  "comment" : ""
+}, {
+  "message" : "Pending State Title",
+  "comment" : ""
+}, {
+  "message" : "Record fields",
+  "comment" : ""
+}, {
+  "message" : "Show Checklist",
+  "comment" : ""
+}, {
+  "message" : "Show SLA",
+  "comment" : ""
+}, {
+  "message" : "State",
+  "comment" : ""
+}, {
+  "message" : "Tagline",
+  "comment" : ""
+}, {
+  "message" : "Title",
+  "comment" : ""
+}, {
+  "message" : "Type",
+  "comment" : ""
+} ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Custom Activity UIs">5b1efb5ac3113010948404186e40dd54</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:58:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>703132131bf59110bed02063b24bcb06</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Onboarding - Onboarding UI</sys_name><sys_overrides/><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_update_name>sys_ux_screen_703132131bf59110bed02063b24bcb06</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:58:34</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=703132131bf59110bed02063b24bcb06"/></record_update>]]></payload>
+        <payload_hash>1656716363</payload_hash>
+        <record_name>Onboarding - Onboarding UI</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:58:34</sys_created_on>
+        <sys_id>7c3132131bf59110bed02063b24bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18335a476270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:58:34</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>74313213c7f59110bcb3fd2d64b11d09</update_guid>
+        <update_guid_history>74313213c7f59110bcb3fd2d64b11d09:1656716363</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 07:01:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>0ed65dabc6d14c8b88a537e230d855e9</sys_id>
+        <sys_metadata>703132131bf59110bed02063b24bcb06</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Onboarding - Onboarding UI</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_703132131bf59110bed02063b24bcb06</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_703132131bf59110bed02063b24bcb06">7c3132131bf59110bed02063b24bcb09</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 07:01:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

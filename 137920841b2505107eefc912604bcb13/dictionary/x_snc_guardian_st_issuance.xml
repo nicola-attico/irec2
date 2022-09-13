@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Issuance" max_length="40" name="x_snc_guardian_st_issuance" sizeclass="0" type="collection">
+    <element label="Issuance" max_length="40" name="x_snc_guardian_st_issuance" sizeclass="0" text_index="true" type="collection">
         <element label="Device" max_length="200" name="device" reference="x_snc_guardian_st_device" type="reference"/>
         <element label="Document" max_length="10000" name="document" type="string"/>
+        <element label="End Date" max_length="100" name="end_date" type="string"/>
         <element label="Hash" max_length="100" name="hash" type="string"/>
         <element choice="1" label="Hedera Status" max_length="40" name="hedera_status" type="choice">
             <choice/>
         </element>
         <element label="Id" max_length="50" name="id" type="string"/>
         <element label="Json" max_length="100000" name="json" type="string"/>
+        <element label="KWh" max_length="40" name="kwh" type="integer"/>
         <element label="Message Id" max_length="50" name="message_id" type="string"/>
         <element label="Owner" max_length="100" name="owner" type="string"/>
         <element label="Policy Id" max_length="200" name="policy_id" reference="x_snc_guardian_st_policy" reference_key="sys_id" type="reference"/>
         <element label="Schema" max_length="200" name="schema" type="string"/>
+        <element label="Start Date" max_length="100" name="start_date" type="string"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice/>
         </element>

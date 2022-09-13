@@ -13,6 +13,7 @@
     var jwt = u.jwt
 
 	var policy_id, vp_hash
+	
     if (v_query.getParameter("policy")) {
         policy_id = v_query.getParameter("policy").toString()
     }
@@ -55,6 +56,8 @@
             row.hash = data[i].hash
             row.document = JSON.stringify(data[i].document)
             row.policy = policy_id
+			row.create_date = data[i].createDate
+			row.type = data[i].type
             /*          row.topic_id = data[i].topicId
                         row.message_id = data[i].messageId
                         row.schema = data[i].schema
@@ -62,8 +65,8 @@
                         row.policy_id = data[i].policyId
                         row.hedera_status = data[i].hederaStatus
                         row.type = data[i].type
-                        row.status = (data[i].option ? data[i].option.status : null)
-                        row.json = JSON.stringify(data[i]) */
+                        row.status = (data[i].option ? data[i].option.status : null) */
+            row.json = JSON.stringify(data[i]) 
             row.sys_id = data[i].hash + "@" + policy_id
 
             //gs.addInfoMessage(JSON.stringify(row))
@@ -79,14 +82,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d39241a1b499d10bed02063b24bcb9d</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Verifiable Presentation</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_7d39241a1b499d10bed02063b24bcb9d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-03 15:07:00</sys_updated_on>
+        <sys_updated_on>2022-09-12 14:30:55</sys_updated_on>
         <table>x_snc_guardian_st_verifiable_presentation</table>
     </sys_script_vtable>
 </record_update>
