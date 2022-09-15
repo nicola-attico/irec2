@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:38:02</sys_created_on>
+        <sys_id>a62b3ab21b8d1150bed02063b24bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian_st_block.x_snc_guardian.block_user</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_security_acl display_value="x_snc_guardian_st_block">ae2b3ab21b8d1150bed02063b24bcb21</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a62b3ab21b8d1150bed02063b24bcb24</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:38:02</sys_updated_on>
+        <sys_user_role display_value="x_snc_guardian.block_user" name="x_snc_guardian.block_user">222bb6b21b8d1150bed02063b24bcb35</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_security_acl_role_a62b3ab21b8d1150bed02063b24bcb24</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-05 11:38:02</sys_created_on><sys_id>a62b3ab21b8d1150bed02063b24bcb24</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_guardian_st_block.x_snc_guardian.block_user</sys_name><sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package><sys_policy/><sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope><sys_security_acl display_value="x_snc_guardian_st_block">ae2b3ab21b8d1150bed02063b24bcb21</sys_security_acl><sys_update_name>sys_security_acl_role_a62b3ab21b8d1150bed02063b24bcb24</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-05 11:38:02</sys_updated_on><sys_user_role display_value="x_snc_guardian.block_user" name="x_snc_guardian.block_user">222bb6b21b8d1150bed02063b24bcb35</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1847167819</payload_hash>
+        <record_name>x_snc_guardian_st_block.x_snc_guardian.block_user</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:38:02</sys_created_on>
+        <sys_id>2a2b3ab21b8d1150bed02063b24bcb26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1826dcc501b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:38:02</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>622b3ab29e8d1150cea9168f71aac626</update_guid>
+        <update_guid_history>622b3ab29e8d1150cea9168f71aac626:-1847167819</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_guardian_st_block.x_snc_guardian.block_user">e958b7d71bf99110bed02063b24bcba7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 12:09:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>49dfd72d51b8484ea09e7450109f81a9</sys_id>
+        <sys_metadata>a62b3ab21b8d1150bed02063b24bcb24</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_guardian_st_block.x_snc_guardian.block_user</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent display_value="">ae2b3ab21b8d1150bed02063b24bcb21</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a62b3ab21b8d1150bed02063b24bcb24</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a62b3ab21b8d1150bed02063b24bcb24">2a2b3ab21b8d1150bed02063b24bcb26</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 12:09:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

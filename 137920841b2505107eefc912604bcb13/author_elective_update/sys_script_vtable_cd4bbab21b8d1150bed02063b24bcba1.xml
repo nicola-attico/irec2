@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Block</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+
+	var policy = JSON.parse(current.config)
+	
+//   if (v_query.getParameter("policy")) {
+//        policy = v_query.getParameter("policy")
+//    }	
+	
+	
+  })(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:42:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd4bbab21b8d1150bed02063b24bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Block</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:42:14</sys_updated_on>
+        <table>x_snc_guardian_st_block</table>
+    </sys_script_vtable>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="guardian">137920841b2505107eefc912604bcb13</application>
+        <file_path/>
+        <instance_id>05ead1f51bd94d94e84d2f8dee4bcbe1</instance_id>
+        <instance_name>esgtoken</instance_name>
+        <name>sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_vtable"&gt;&lt;sys_script_vtable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;cache_isolation_level&gt;USER&lt;/cache_isolation_level&gt;&lt;cache_strategy&gt;CACHE_BY_QUERY&lt;/cache_strategy&gt;&lt;cache_ttl&gt;0&lt;/cache_ttl&gt;&lt;name&gt;Block&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function executeQuery(v_table, v_query) {
+
+	var policy = JSON.parse(current.config)
+	
+//   if (v_query.getParameter("policy")) {
+//        policy = v_query.getParameter("policy")
+//    }	
+	
+	
+  })(v_table, v_query);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_vtable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-05 11:42:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cd4bbab21b8d1150bed02063b24bcba1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Block&lt;/sys_name&gt;&lt;sys_package display_value="guardian" source="x_snc_guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="guardian"&gt;137920841b2505107eefc912604bcb13&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-05 11:42:14&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_guardian_st_block&lt;/table&gt;&lt;/sys_script_vtable&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1404070975</payload_hash>
+        <record_name>Block</record_name>
+        <reverted_from/>
+        <source>d43fb3ed1b789d507eefc912604bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 11:42:15</sys_created_on>
+        <sys_id>dc2cb6f21b8d1150bed02063b24bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1826dd029fe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 11:42:15</sys_updated_on>
+        <type>Remote Table</type>
+        <update_guid>182cb6f2b68d11508189741027946d9c</update_guid>
+        <update_guid_history>182cb6f2b68d11508189741027946d9c:-1404070975</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 12:09:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_vtable">sys_script_vtable</sys_db_object>
+        <sys_id>0cb5a3f6fb6c487e97cfc90a95056a79</sys_id>
+        <sys_metadata>cd4bbab21b8d1150bed02063b24bcba1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Block</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_scope_delete display_value="">05c65a9d69774e5088866e42e238e190</sys_scope_delete>
+        <sys_update_name>sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1</sys_update_name>
+        <sys_update_version display_value="sys_script_vtable_cd4bbab21b8d1150bed02063b24bcba1">dc2cb6f21b8d1150bed02063b24bcb9c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 12:09:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

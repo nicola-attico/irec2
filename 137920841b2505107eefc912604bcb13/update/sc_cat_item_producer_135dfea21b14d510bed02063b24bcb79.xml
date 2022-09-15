@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</category>
         <checked_out/>
         <cost>0</cost>
         <custom_cart/>
@@ -68,7 +68,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -107,14 +107,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-28 10:24:23</sys_created_on>
         <sys_id>135dfea21b14d510bed02063b24bcb79</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Create device</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sc_cat_item_producer_135dfea21b14d510bed02063b24bcb79</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-12 08:55:28</sys_updated_on>
+        <sys_updated_on>2022-09-13 11:49:46</sys_updated_on>
         <table_name>x_snc_guardian_req</table_name>
         <taxonomy_topic/>
         <template/>

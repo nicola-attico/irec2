@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Token Association" max_length="40" name="x_snc_guardian_st_token_association" sizeclass="0" text_index="true" type="collection">
         <element label="Associated" max_length="40" name="associated" type="boolean"/>
+        <element label="Kyc" max_length="40" name="kyc" type="boolean"/>
         <element label="Token Id" max_length="20" name="token_id" type="string"/>
         <element label="Token Name" max_length="100" name="token_name" type="string"/>
         <element label="Token Symbol" max_length="100" name="token_symbol" type="string"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request Issuance">8807254a1b3011907eefc912604bcb40</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 11:50:14</sys_created_on>
+        <sys_id>15f3bf931bf99110bed02063b24bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Request Issuance</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_15f3bf931bf99110bed02063b24bcb54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 11:50:14</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

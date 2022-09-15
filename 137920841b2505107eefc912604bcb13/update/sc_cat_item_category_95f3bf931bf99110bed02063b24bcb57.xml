@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request Issuance">8807254a1b3011907eefc912604bcb40</sc_cat_item>
+        <sc_category display_value="Guardian">0666bb121bcc9910bed02063b24bcb9e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 11:50:14</sys_created_on>
+        <sys_id>95f3bf931bf99110bed02063b24bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian.Request Issuance</sys_name>
+        <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
+        <sys_update_name>sc_cat_item_category_95f3bf931bf99110bed02063b24bcb57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 11:50:14</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
