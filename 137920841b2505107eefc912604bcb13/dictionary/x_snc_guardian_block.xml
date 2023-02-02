@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Block" max_length="40" name="x_snc_guardian_block" sizeclass="1" type="collection">
-        <element label="Block" max_length="32" name="block" reference="x_snc_guardian_block" type="reference"/>
+    <element db_object_id="88787bd71bf99110bed02063b24bcbad" label="Block" max_length="40" name="x_snc_guardian_block" type="collection">
         <element label="Json" max_length="100000" name="json" type="string"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_snc_guardian_block" type="reference"/>
         <element label="Policy" max_length="32" name="policy" reference="x_snc_guardian_st_policy" type="reference"/>
         <element label="Seq" max_length="40" name="seq" type="integer"/>
+        <element label="Tag" max_length="100" name="tag" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice/>
         </element>
         <index name="index">
-            <element name="block"/>
+            <element name="parent"/>
         </index>
         <index name="index2">
             <element name="policy"/>

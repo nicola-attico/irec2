@@ -1,6 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Onboarding" max_length="40" name="x_snc_guardian_onboarding" sizeclass="12" text_index="true" type="collection">
-        <element label="Registry" max_length="32" name="registry" reference="x_snc_guardian_login" reference_qual="is_root_authority=true^EQ" reference_qual_condition="is_root_authority=true^EQ" type="reference"/>
-        <element label="User" max_length="32" name="user" reference="x_snc_guardian_login" reference_qual="is_root_authority=false^EQ" reference_qual_condition="is_root_authority=false^EQ" type="reference"/>
-    </element>
+    <element db_object_id="6ef37d351b75d150bed02063b24bcba1" extends="task" label="Onboarding" max_length="40" name="x_snc_guardian_onboarding" text_index="true" type="collection"/>
 </database>

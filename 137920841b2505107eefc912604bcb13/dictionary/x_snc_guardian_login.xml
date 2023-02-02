@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Guardian Users" max_length="40" name="x_snc_guardian_login" sizeclass="2" text_index="true" type="collection">
+    <element db_object_id="f36228ea1b40d910bed02063b24bcb77" label="Guardian Users" max_length="40" name="x_snc_guardian_login" text_index="true" type="collection">
         <element label="Account Id" max_length="50" name="account_id" type="string"/>
         <element label="Confirmed" max_length="40" name="confirmed" type="boolean"/>
         <element label="Did" max_length="200" name="did" type="string" unique="true"/>
         <element label="Failed" max_length="40" name="failed" type="boolean"/>
         <element label="Is Root Authority" max_length="40" name="is_root_authority" type="boolean"/>
-        <element label="Jwt" max_length="200" name="jwt" type="string"/>
+        <element label="Jwt" max_length="1000" name="jwt" type="string"/>
         <element label="Parent" max_length="200" name="parent" type="string"/>
         <element label="Password" max_length="255" name="password" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;    gr = new GlideRecord(&quot;x_snc_guardian_login&quot;)&#13;&#10;&#9;gr.get(&quot;did&quot;, current.parent)&#13;&#10;&#9;return gr.sys_id&#13;&#10;&#13;&#10;})(current);" label="Root Authority" max_length="200" name="root_authority" reference="x_snc_guardian_login" reference_qual="is_root_authority=true^EQ" reference_qual_condition="is_root_authority=true^EQ" type="reference" virtual="true"/>
         <element label="Topic Id" max_length="50" name="topic_id" type="string"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <element display="true" label="Username" max_length="50" name="username" type="string"/>
-        <index name="index">
-            <element name="root_authority"/>
+        <index name="index" unique="true">
+            <element name="did"/>
         </index>
         <index name="index2">
-            <element name="user"/>
+            <element name="root_authority"/>
         </index>
-        <index name="index3" unique="true">
-            <element name="did"/>
+        <index name="index3">
+            <element name="user"/>
         </index>
     </element>
 </database>

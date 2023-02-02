@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Policy" max_length="40" name="x_snc_guardian_st_policy" sizeclass="0" text_index="true" type="collection">
+    <element db_object_id="794659a81ba945107eefc912604bcbec" label="Policy" max_length="40" name="x_snc_guardian_st_policy" text_index="true" type="collection">
         <element label="Config" max_length="100000" name="config" type="string_full_utf8"/>
         <element label="Creator" max_length="100" name="creator" type="string"/>
+        <element label="Creator is" max_length="32" name="creator_is" reference="x_snc_guardian_login" type="reference"/>
         <element label="Description" max_length="100" name="description" type="string_full_utf8"/>
         <element label="Id" max_length="50" name="id" type="string"/>
         <element label="Instance Topic Id" max_length="50" name="instance_topic_id" type="string"/>
@@ -9,6 +10,7 @@
         <element label="Message Id" max_length="20" name="message_id" type="string"/>
         <element label="Name" max_length="100" name="name" type="string_full_utf8"/>
         <element label="Owner" max_length="100" name="owner" type="string"/>
+        <element label="Owner is" max_length="32" name="owner_is" reference="x_snc_guardian_login" type="reference"/>
         <element label="Policy Roles" max_length="100" name="policy_roles" type="string"/>
         <element label="Policy Tag" max_length="50" name="policy_tag" type="string"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
@@ -19,5 +21,11 @@
         </element>
         <element label="Topic Id" max_length="20" name="topic_id" type="string"/>
         <element label="Version" max_length="20" name="version" type="string"/>
+        <index name="index">
+            <element name="creator_is"/>
+        </index>
+        <index name="index2">
+            <element name="owner_is"/>
+        </index>
     </element>
 </database>

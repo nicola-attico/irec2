@@ -9,10 +9,10 @@
         <comments/>
         <condition/>
         <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
@@ -37,28 +37,30 @@ var p = JSON.parse(current.json)
 block.type = p.config.blockType
 block.json = JSON.stringify(p.config)
 block.seq = 1
+block.tag = p.config.tag
 block.insert()
 
 addChildren(p.config, block)
 
 function addChildren(obj, parentBlock) {
-    for (i = 0; i < obj.children.length; i++) {
+    for (var i = 0; i < obj.children.length; i++) {
+
         var child = new GlideRecord("x_snc_guardian_block")
         child.initialize()
         child.parent = parentBlock.sys_id
         child.type = obj.children[i].blockType
-		child.json = JSON.stringify(obj.children[i])
-		child.seq = i
+        child.json = JSON.stringify(obj.children[i])
+		child.tag = obj.children[i].tag
+        child.seq = i
         child.insert()
 
-        /* for (n = 0; n < obj.children[i].children.length; n++) {
-            add_children(obj.children[i].children[n], child)
-        } */
+        for (var j = 0; j < obj.children[i].children.length; j++) {
+            addChildren(obj.children[i].children[j], child)
+        }
     }
-} 
+}
 
-action.setRedirectURL(current)
-]]></script>
+action.setRedirectURL(current)]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -69,7 +71,7 @@ action.setRedirectURL(current)
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5a87b7971bf99110bed02063b24bcbfc</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Parse policy</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
@@ -77,7 +79,7 @@ action.setRedirectURL(current)
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_ui_action_5a87b7971bf99110bed02063b24bcbfc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 12:49:14</sys_updated_on>
+        <sys_updated_on>2022-09-15 13:36:54</sys_updated_on>
         <table>x_snc_guardian_st_policy</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

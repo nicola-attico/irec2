@@ -1,60 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="6c01d19a1b6d4110bed02063b24bcbbe" sys_domain="global" table="x_snc_guardian_st_policy" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>name</element>
+            <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-09-07 15:41:56</sys_created_on>
-            <sys_id>3c7f6d211b3515507eefc912604bcb27</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>724d75911b465910bed02063b24bcb92</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-09-07 15:41:56</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>7a4d75911b465910bed02063b24bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>version</element>
-            <position>1</position>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-09-07 15:41:56</sys_created_on>
-            <sys_id>bc7f6d211b3515507eefc912604bcb27</sys_id>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>7e4d75911b465910bed02063b24bcb92</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-09-07 15:41:56</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>724d75911b465910bed02063b24bcb93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>764d75911b465910bed02063b24bcb93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>2</position>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-09-07 15:41:56</sys_created_on>
-            <sys_id>307f6d211b3515507eefc912604bcb28</sys_id>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>7a4d75911b465910bed02063b24bcb93</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-09-07 15:41:56</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>status</element>
-            <position>3</position>
-            <sys_created_by>nicola</sys_created_by>
-            <sys_created_on>2022-09-07 15:41:56</sys_created_on>
-            <sys_id>b07f6d211b3515507eefc912604bcb28</sys_id>
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-19 08:19:38</sys_created_on>
+            <sys_id>7e4d75911b465910bed02063b24bcb93</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_guardian_st_policy" sys_domain="global" view="Default view">6c01d19a1b6d4110bed02063b24bcbbe</sys_ui_section>
-            <sys_updated_by>nicola</sys_updated_by>
-            <sys_updated_on>2022-09-07 15:41:56</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-19 08:19:38</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="block" label="Block" language="en" table="x_snc_guardian_block">
+    <sys_documentation element="policy" label="Policy" language="en" table="x_snc_guardian_st_device">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>block</element>
+            <element>policy</element>
             <help/>
             <hint/>
-            <label>Block</label>
+            <label>Policy</label>
             <language>en</language>
-            <name>x_snc_guardian_block</name>
-            <plural>Blocks</plural>
+            <name>x_snc_guardian_st_device</name>
+            <plural>Policies</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-13 12:10:57</sys_created_on>
-            <sys_id>f4b8331b1bf99110bed02063b24bcb3f</sys_id>
+            <sys_created_on>2022-09-19 09:08:56</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Block</sys_name>
+            <sys_name>Policy</sys_name>
             <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
             <sys_policy/>
             <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_guardian_block_block_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_snc_guardian_st_device_policy_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-13 12:10:57</sys_updated_on>
+            <sys_updated_on>2022-09-19 09:08:56</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

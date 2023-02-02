@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Issuance" max_length="40" name="x_snc_guardian_st_issuance" sizeclass="0" text_index="true" type="collection">
+    <element db_object_id="073490391bf89d507eefc912604bcb36" label="Issuance" max_length="40" name="x_snc_guardian_st_issuance" text_index="true" type="collection">
         <element label="Device" max_length="200" name="device" reference="x_snc_guardian_st_device" type="reference"/>
         <element label="Document" max_length="10000" name="document" type="string"/>
         <element label="End Date" max_length="100" name="end_date" type="string"/>
@@ -12,6 +12,7 @@
         <element label="KWh" max_length="40" name="kwh" type="integer"/>
         <element label="Message Id" max_length="50" name="message_id" type="string"/>
         <element label="Owner" max_length="100" name="owner" type="string"/>
+        <element label="Owner is" max_length="32" name="owner_is" reference="x_snc_guardian_login" type="reference"/>
         <element label="Policy Id" max_length="200" name="policy_id" reference="x_snc_guardian_st_policy" reference_key="sys_id" type="reference"/>
         <element label="Schema" max_length="200" name="schema" type="string"/>
         <element label="Start Date" max_length="100" name="start_date" type="string"/>
@@ -22,10 +23,13 @@
         <element label="Topic Id" max_length="50" name="topic_id" type="string"/>
         <element label="Type" max_length="50" name="type" type="string"/>
         <index name="index">
-            <element name="policy_id"/>
+            <element name="device"/>
         </index>
         <index name="index2">
-            <element name="device"/>
+            <element name="owner_is"/>
+        </index>
+        <index name="index3">
+            <element name="policy_id"/>
         </index>
     </element>
 </database>

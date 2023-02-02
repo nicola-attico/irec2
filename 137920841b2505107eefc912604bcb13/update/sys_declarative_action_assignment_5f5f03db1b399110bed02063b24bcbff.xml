@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
     <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
         <action/>
-        <action_attributes>{"activityView":"stacked","playbookExperienceId":"","parentSysId":"","parentTable":"","compactMode":"","recordGeneratorQuery":"","isNewParentRecord":""}</action_attributes>
+        <action_attributes>{"activityView":"stacked","playbookExperienceId":"347fd1041b4e1510bed02063b24bcb39","parentSysId":"{​{sysId}}","parentTable":"{{table}}","compactMode":"","recordGeneratorQuery":"","isNewParentRecord":"{​{isNewRecord}}"}</action_attributes>
         <action_name>onboarding_ri</action_name>
         <action_payload/>
         <action_type>type</action_type>
@@ -21,6 +21,7 @@
         <description/>
         <design_icon/>
         <enabled>true</enabled>
+        <experience_restricted>false</experience_restricted>
         <field_name/>
         <field_type>glide_date</field_type>
         <form_fields_required>false</form_fields_required>
@@ -39,7 +40,7 @@
         <record_selection_required>false</record_selection_required>
         <required_roles/>
         <requires_value>false</requires_value>
-        <script_condition/>
+        <script_condition>sn_playbook.PlaybookExperience.parentRecordContainsPlaybook(current)</script_condition>
         <server_script/>
         <specificity>21</specificity>
         <sys_class_name>sys_declarative_action_assignment</sys_class_name>
@@ -48,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f5f03db1b399110bed02063b24bcbff</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>onboarding_ri</sys_name>
         <sys_overrides/>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
@@ -56,7 +57,7 @@
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_5f5f03db1b399110bed02063b24bcbff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 09:29:01</sys_updated_on>
+        <sys_updated_on>2022-09-15 10:25:40</sys_updated_on>
         <table>x_snc_guardian_onboarding</table>
         <tooltip/>
         <ui_component display_value="now-playbook-experience">9d0bc73916d784d8692b89e9553124dc</ui_component>

@@ -17,48 +17,53 @@
     if (v_query.getParameter("policy_id")) {
         policy_id = v_query.getParameter("policy_id")
     }
-	
+
     if (v_query.isGet()) {
-		registrant_id = v_query.getSysId().split("@")[0].toString()
+        registrant_id = v_query.getSysId().split("@")[0].toString()
         policy_id = v_query.getSysId().split("@")[1].toString()
-    }	
+    }
 
-    var sm = new sn_ws.RESTMessageV2();
-    sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/tag/registrants_grid")
-    sm.setHttpMethod("get")
-    sm.setRequestHeader("authorization", "bearer " + jwt)
-    var response = sm.execute()
-    var responseBody = response.getBody();
-    var httpStatus = response.getStatusCode();
+        var sm = new sn_ws.RESTMessageV2();
+        sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/tag/registrants_grid")
+        sm.setHttpMethod("get")
+        sm.setRequestHeader("authorization", "bearer " + jwt)
+        var response = sm.execute()
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
 
-    //gs.addInfoMessage("responseBody " + responseBody)
+        //gs.addInfoMessage("responseBody " + responseBody)
 
-    var body = JSON.parse(responseBody)
-    var registrants_grid_uuid = body.id
+        var body = JSON.parse(responseBody)
+        var registrants_grid_uuid = body.id
 
-    var sm2 = new sn_ws.RESTMessageV2();
-    sm2.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + registrants_grid_uuid)
-    sm2.setHttpMethod("get")
-    sm2.setRequestHeader("authorization", "bearer " + jwt)
-    var response2 = sm2.execute()
-    var responseBody2 = response2.getBody();
-    var httpStatus2 = response2.getStatusCode();
+        var sm2 = new sn_ws.RESTMessageV2();
+        sm2.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies/" + policy_id + "/blocks/" + registrants_grid_uuid)
+        sm2.setHttpMethod("get")
+        sm2.setRequestHeader("authorization", "bearer " + jwt)
+        var response2 = sm2.execute()
+        var responseBody2 = response2.getBody();
+        var httpStatus2 = response2.getStatusCode();
 
-    //gs.addInfoMessage("responseBody2 " + responseBody2)
+        //gs.addInfoMessage("responseBody2 " + responseBody2)
 
-    var data = JSON.parse(responseBody2).data
+        var data = JSON.parse(responseBody2).data
 
-    //gs.addInfoMessage(JSON.stringify(data))
+        //gs.addInfoMessage(JSON.stringify(data))
 
-    for (i = 0; i < data.length; i++) {
-        var row = {}
+        for (i = 0; i < data.length; i++) {
+            var row = {}
 
-        if (data[i].id == registrant_id || registrant_id == undefined || registrant_id == null) {
+            if (data[i].id == registrant_id || registrant_id == undefined || registrant_id == null) {
             row.sys_id = data[i].id + "@" + data[i].policyId
             //		row.sys_id = data[i].id
             row.id = data[i].id
-			row.seq = i
+            row.seq = i
+
             row.owner = data[i].owner
+            var owner = new GlideRecord("x_snc_guardian_login")
+            owner.get("did", data[i].owner)
+            row.owner_is = owner.sys_id
+
             row.hash = data[i].hash
             row.document = JSON.stringify(data[i].document)
             row.topic_id = data[i].topicId
@@ -70,16 +75,18 @@
             row.type = data[i].type
             row.status = (data[i].option ? data[i].option.status : null)
             row.json = JSON.stringify(data[i])
-			row.legal_name = data[i].document.credentialSubject[0].field1.field0
-			row.address_line = data[i].document.credentialSubject[0].field1.field1
-			row.zip = data[i].document.credentialSubject[0].field1.field4
-			row.country = data[i].document.credentialSubject[0].field1.field5
-			row.vat = data[i].document.credentialSubject[0].field1.field9
+            row.legal_name = data[i].document.credentialSubject[0].field1.field0
+            row.address_line = data[i].document.credentialSubject[0].field1.field1
+            row.zip = data[i].document.credentialSubject[0].field1.field4
+            row.country = data[i].document.credentialSubject[0].field1.field5
+            row.vat = data[i].document.credentialSubject[0].field1.field9
 
 
             v_table.addRow(row)
-        } 
+        }
 
+		
+			
     }
 
 })(v_table, v_query);]]></script>
@@ -89,14 +96,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2e55f60c1bdc5110bed02063b24bcbfb</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>Registrant</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_2e55f60c1bdc5110bed02063b24bcbfb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-10 16:04:19</sys_updated_on>
+        <sys_updated_on>2022-09-19 08:59:29</sys_updated_on>
         <table>x_snc_guardian_st_registrant</table>
     </sys_script_vtable>
 </record_update>

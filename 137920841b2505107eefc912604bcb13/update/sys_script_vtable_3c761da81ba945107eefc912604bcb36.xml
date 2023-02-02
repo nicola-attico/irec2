@@ -11,16 +11,18 @@
     var u = new GlideRecord("x_snc_guardian_login")
     u.get("user", gs.getUserID())
     var jwt = u.jwt
-
+    gs.addInfoMessage("jwt " + jwt)
+	
     var sm = new sn_ws.RESTMessageV2();
     sm.setEndpoint(gs.getProperty("x_snc_guardian.endpoint") + "/policies")
+	gs.addInfoMessage(gs.getProperty("x_snc_guardian.endpoint") + "/policies")
     sm.setHttpMethod("get")
     sm.setRequestHeader("authorization", "bearer " + jwt)
     var response = sm.execute()
     var responseBody = response.getBody();
     var httpStatus = response.getStatusCode();
 
-    //gs.addInfoMessage(responseBody)
+    gs.addInfoMessage(responseBody)
 
     var body = JSON.parse(responseBody)
 
@@ -30,12 +32,21 @@
         row.sys_id = body[i].id
 		row.config = JSON.stringify(body[i].config)
 		row.json = JSON.stringify(body[i])
-        row.creator = body[i].creator
         row.description = body[i].description
         row.id = body[i].id
         row.message_id = body[i].messageId
         row.name = body[i].name
+		
         row.owner = body[i].owner
+		var owner = new GlideRecord("x_snc_guardian_login")
+		owner.get("did", body[i].owner)
+		row.owner_is = owner.sys_id
+
+		row.creator = body[i].creator
+		var creator = new GlideRecord("x_snc_guardian_login")
+		creator.get("did", body[i].creator)
+		row.creator_is = creator.sys_id
+		
         row.policy_roles = JSON.stringify(body[i].policyRoles)
         row.policy_tag = body[i].policyTag
         row.status = body[i].status
@@ -52,14 +63,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3c761da81ba945107eefc912604bcb36</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Policy</sys_name>
         <sys_package display_value="guardian" source="x_snc_guardian">137920841b2505107eefc912604bcb13</sys_package>
         <sys_policy/>
         <sys_scope display_value="guardian">137920841b2505107eefc912604bcb13</sys_scope>
         <sys_update_name>sys_script_vtable_3c761da81ba945107eefc912604bcb36</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-05 14:08:27</sys_updated_on>
+        <sys_updated_on>2023-01-23 13:51:21</sys_updated_on>
         <table>x_snc_guardian_st_policy</table>
     </sys_script_vtable>
 </record_update>
